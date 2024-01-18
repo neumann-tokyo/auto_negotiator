@@ -19,9 +19,7 @@
 		"type": "git",
 		"url": "git@github.com:neumann-tokyo/auto_negotiator.git"
 	},
-	"keywords": [
-		"Auto Negotiation"
-	],
+	"keywords": ["Auto Negotiation"],
 	"author": "kbaba1001",
 	"license": "MIT License",
 	"bugs": {
@@ -31,8 +29,5 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.4.1",
 		"lefthook": "^1.5.5"
-	},
-	"dependencies": {
-		"@preact/signals-core": "^1.5.1"
 	}
 }

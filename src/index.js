@@ -4,6 +4,7 @@ import * as diagnostics_channel from "node:diagnostics_channel";
 // onMessage: ({
 //   id: integer,
 //   attempts: Array<{agentName: string, bid: double, type: "offer" | "accept" | "reject"}>,
+//   attemptsCount: integer,
 //   responseChannelName: string
 // },
 // name: string) => void
@@ -42,7 +43,12 @@ export function negotiate({ attemptsCount, channelName }) {
 	diagnostics_channel.subscribe(responseChannelName, onResponseMessage);
 
 	for (let i = 0; i < attemptsCount; i++) {
-		channel.publish({ id: i, attempts: attempts, responseChannelName });
+		channel.publish({
+			id: i,
+			attempts: attempts,
+			attemptsCount,
+			responseChannelName,
+		});
 	}
 
 	return attempts;
