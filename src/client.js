@@ -1,3 +1,3 @@
-import main from "./index.js";
+import { negotiate } from "./index.js";
 
-main();
+negotiate();

@@ -1,7 +1,7 @@
 import * as assert from "node:assert";
 import { test } from "node:test";
-import main from "../src/index.js";
+import { negotiate } from "../src/index.js";
 
-test("should return hello world", () => {
-	assert.equal(main(), "hello world");
+test("negotiate", () => {
+	assert.deepEqual(negotiate(), {});
 });
