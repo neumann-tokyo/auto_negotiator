@@ -1,18 +1,67 @@
 import * as assert from "node:assert";
-import { mock, test } from "node:test";
-import { defineAgent, negotiate } from "../src/index.js";
+import * as diagnostics_channel from "node:diagnostics_channel";
+import { test } from "node:test";
+import { checkResult, defineAgent, negotiate } from "../src/index.js";
 
-test("negotiate", () => {
-	const channelName = "test";
+test("negotiate", (t) => {
+	// t.test("when no agents", () => {
+	// 	const channelName = "test-no-agents";
 
-	const agent1 = mock.fn((status, _name) => {});
-	defineAgent({
-		channelName,
-		onMessage: agent1,
+	// 	assert.throws(() => {
+	// 		negotiate({ attemptsCount: 1, channelName });
+	// 	}, Error);
+	// });
+
+	t.test("attempts count 1", () => {
+		const channelName = "test1";
+
+		const agent1 = ({ id, attempts, responseChannelName }, _name) => {
+			// console.log("agent1 current attempt: ", attempts[id]);
+
+			const responseChannel = diagnostics_channel.channel(responseChannelName);
+			responseChannel.publish({
+				id,
+				bid: 100.1,
+				agentName: "agent1",
+				type: "offer",
+			});
+		};
+		defineAgent({
+			channelName,
+			onMessage: agent1,
+		});
+
+		const agent2 = ({ id, attempts, responseChannelName }, _name) => {
+			// console.log("agent2 current attempt: ", attempts[id]);
+
+			const responseChannel = diagnostics_channel.channel(responseChannelName);
+			responseChannel.publish({
+				id,
+				bid: 95.1,
+				agentName: "agent2",
+				type: "offer",
+			});
+		};
+		defineAgent({
+			channelName,
+			onMessage: agent2,
+		});
+
+		const attempts = negotiate({ attemptsCount: 1, channelName });
+
+		assert.deepEqual(attempts, [
+			[
+				{ agentName: "agent1", bid: 100.1, type: "offer" },
+				{ agentName: "agent2", bid: 95.1, type: "offer" },
+			],
+		]);
+
+		const result = checkResult(attempts);
+		assert.equal(result.isAgreed, false);
+		assert.equal(result.id, 0);
+		assert.deepEqual(result.result, [
+			{ agentName: "agent1", bid: 100.1, type: "offer" },
+			{ agentName: "agent2", bid: 95.1, type: "offer" },
+		]);
 	});
-
-	negotiate({ attemptsCount: 1, channelName });
-
-	assert.equal(agent1.mock.calls.length, 1);
-	assert.deepEqual(agent1.mock.calls[0].arguments, [{}, channelName]);
 });
