@@ -3,5 +3,5 @@ import { test } from "node:test";
 import { negotiate } from "../src/index.js";
 
 test("negotiate", () => {
-	assert.deepEqual(negotiate(), {});
+	assert.deepEqual(negotiate({ attemptsCount: 1 }), {});
 });
