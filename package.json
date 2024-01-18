@@ -2,14 +2,14 @@
 	"name": "auto_negotiator",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/main.js",
+	"main": "src/index.js",
 	"type": "module",
 	"engines": {
 		"node": ">=18",
 		"pnpm": ">=8.0.0"
 	},
 	"scripts": {
-		"dev": "node src/main.js",
+		"dev": "node src/client.js",
 		"test": "NODE_ENV=test node --test test/**/*.test.js",
 		"check": "biome check --apply ./src",
 		"postinstall": "lefthook install"
@@ -20,7 +20,7 @@
 	},
 	"keywords": ["Auto Negotiation"],
 	"author": "kbaba1001",
-	"license": "MIT",
+	"license": "MIT License",
 	"bugs": {
 		"url": "https://github.com/neumann-tokyo/auto_negotiator/issues"
 	},
