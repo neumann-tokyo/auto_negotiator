@@ -10,7 +10,8 @@
 	},
 	"scripts": {
 		"dev": "node src/client.js",
-		"test": "NODE_ENV=test node --test test/**/*.test.js",
+		"test:all": "NODE_ENV=test node --test test/**/*.test.js",
+		"test": "NODE_ENV=test node --test",
 		"check": "biome check --apply ./src",
 		"postinstall": "lefthook install"
 	},
