@@ -1,19 +1,63 @@
-// const utilitySpaceXmlPath = "src/sample-domain/Atlas3/triangularFight_util1.xml";
+import * as helper from "../../helper.js";
 
 export function sampleAgent(
-	{ data: { id, attempts, attemptsCount, responseChannelName }, topic },
+	{
+		data: { id, attempts, attemptsCount, responseChannelName },
+		topic,
+		normalizedTopic,
+	},
 	_name,
 ) {
-	const currentAttempt = attempts[id];
-	const responseChannel = diagnostics_channel.channel(responseChannelName);
+	const currentAttempt = helper.currentAttempt({ id, attempts });
+	const progress = helper.progress({ id, attemptsCount });
+	const concessionValue = 1.0 - progress;
 
-	const progress = id / attemptsCount;
-	const sourceBid = 1.0 - progress;
+	// currentAttempt に他の agent の status がはいっている
+	const hasOtherAgentOffer =
+		currentAttempt != null && currentAttempt.length > 0;
 
+	if (!hasOtherAgentOffer) {
+		for (const status of currentAttempt) {
+			if (status.type === "offer") {
+				const anotherConcessionValue = helper.choicesToConcessionValue({
+					choices: status.choices,
+				});
+
+				if (concessionValue < anotherConcessionValue) {
+					return {
+						id,
+						choices: status.choices,
+						concessionValue: anotherConcessionValue,
+						type: "accept",
+					};
+				}
+			}
+		}
+	}
+
+	const choices = helper.concessionValueToChoices({
+		normalizedTopic,
+		concessionValue,
+	});
+	return {
+		id,
+		choices,
+		concessionValue,
+		type: "offer",
+	};
 	// return {
-	// 	id,
-	// 	bid: 100.1,
-	// 	agentName: "agent1",
+	// 	id: data.id,
+	// 	choices: ["a1", "b2"],
+	// 	concessionValue: 0.7654321,
 	// 	type: "offer",
-	// }
+	// };
 }
+
+// Choices: {
+// 	issueName: string,
+// 	item: {
+// 		name: string,
+// 		evalution: integer,
+//     normalizedTopic: double
+// 	}
+// }

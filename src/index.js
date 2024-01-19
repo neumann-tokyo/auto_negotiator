@@ -1,8 +1,8 @@
 import * as diagnostics_channel from "node:diagnostics_channel";
 
-// channelName: string
-// agentName: string
-// topic: {
+// (topic: Topic) => NormalizedTopic
+//
+// type Topic: {
 //    name: string,
 //  	description: string,
 //  	discount_factor: double,
@@ -12,32 +12,87 @@ import * as diagnostics_channel from "node:diagnostics_channel";
 //  		weight: double,
 //  		items: Array<{
 //  			name: string,
-//  			evaluation: double,
+//  			evaluation: integer,
 //  		}>
 //  	}>,
 // }
+// type NormalizedTopic: {
+//    name: string,
+//  	description: string,
+//  	discount_factor: double,
+//  	reservation: double,
+//  	issues: Array<{
+//  		name: string,
+//  		weight: double,
+//  		items: Array<{
+//  			name: string,
+//  			evaluation: integer,
+// 			  normalizedEvaluation: double,
+//  		}>
+//  	}>,
+// }
+export function normalizeTopic(topic) {
+	const newIssues = topic.issues.map((issue) => {
+		const maxEvaluation = Math.max(
+			...issue.items.map((item) => item.evaluation),
+		);
+		const newItems = issue.items.map((item) => {
+			return {
+				...item,
+				normalizedEvaluation: (item.evaluation / maxEvaluation) * issue.weight,
+			};
+		});
+
+		return {
+			...issue,
+			items: newItems,
+		};
+	});
+
+	return {
+		...topic,
+		issues: newIssues,
+	};
+}
+
+// channelName: string
+// agentName: string
+// topic: Topic
 // actionFn: ({
 //   data: {
 // 		id: integer,
 // 		attempts: Array<{
 // 			agentName: string,
-// 			bid: double,
+// 			choices: Array<Choice>,
+//      concessionValue: double,
 // 			type: "offer" | "accept" | "reject"}>,
 // 		attemptsCount: integer,
 // 		responseChannelName: string
 // 	},
 //  topic: Topic,
+//  normalizedTopic: NormalizedTopic,
 // },) => {
 // 	id: integer,
-// 	bid: double,
+// 	choices: Array<Choice>,
+//  concessionValue: double,
 // 	type: "offer" | "accept" | "reject",
 // }
+//
+// type Choices: {
+// 	issueName: string,
+// 	item: {
+// 		name: string,
+// 		evaluation: integer,
+//    normalizedEvaluation: double
+// 	}
+// }
 export function defineAgent({ channelName, agentName, topic, actionFn }) {
+	const normalizedTopic = normalizeTopic(topic);
 	const onMessage = (data, _name) => {
 		const responseChannel = diagnostics_channel.channel(
 			data.responseChannelName,
 		);
-		const response = actionFn({ data, topic });
+		const response = actionFn({ data, topic, normalizedTopic });
 		responseChannel.publish({ ...response, agentName });
 	};
 
@@ -49,10 +104,6 @@ export function defineAgent({ channelName, agentName, topic, actionFn }) {
 export function negotiate({ attemptsCount, channelName }) {
 	const responseChannelName = `${channelName}-response`;
 	const channel = diagnostics_channel.channel(channelName);
-
-	// attempts = [
-	// 	[{agentName: "agent1", bid: 100, type: "offer"}, {agentName: "agent2", bid: 200, type: "accept"}]
-	// ]
 	const attempts = [[]];
 
 	if (!channel.hasSubscribers) {
@@ -60,16 +111,20 @@ export function negotiate({ attemptsCount, channelName }) {
 	}
 
 	// id: integer => 何度目かの思考であるかを示すid
-	// bid: double => 提案値
 	// agentName: string => エージェント名
+	// choices: Array<string> => 提案する選択肢
+	// concessionValue: double => 提案の納得度(効用値)
 	// type: "offer" | "accept" | "reject" => レスポンス種別
-	const onResponseMessage = ({ id, bid, agentName, type }, _name) => {
+	const onResponseMessage = (
+		{ id, agentName, choices, concessionValue, type },
+		_name,
+	) => {
 		const idNumber = Number(id);
 		if (attempts[idNumber] == null) {
 			attempts[idNumber] = [];
 		}
 
-		const status = { agentName, bid, type };
+		const status = { agentName, choices, concessionValue, type };
 		attempts[idNumber].push(status);
 	};
 	diagnostics_channel.subscribe(responseChannelName, onResponseMessage);

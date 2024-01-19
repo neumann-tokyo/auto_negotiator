@@ -3,7 +3,7 @@ export const topic = {
 	description: "What should we have dinner?",
 	discount_factor: 0.1,
 	reservation: 0.3,
-	issue: [
+	issues: [
 		{
 			name: "Staple food",
 			weight: 0.5,
