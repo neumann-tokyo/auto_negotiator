@@ -1,4 +1,4 @@
-import * as helper from "../../helper.js";
+import * as helper from "../../src/helper.js";
 
 export function sampleAgent(
 	{
@@ -45,19 +45,4 @@ export function sampleAgent(
 		concessionValue,
 		type: "offer",
 	};
-	// return {
-	// 	id: data.id,
-	// 	choices: ["a1", "b2"],
-	// 	concessionValue: 0.7654321,
-	// 	type: "offer",
-	// };
 }
-
-// Choices: {
-// 	issueName: string,
-// 	item: {
-// 		name: string,
-// 		evalution: integer,
-//     normalizedTopic: double
-// 	}
-// }

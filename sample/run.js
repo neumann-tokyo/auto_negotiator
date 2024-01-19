@@ -29,4 +29,5 @@ const attempts = negotiator.negotiate({ attemptsCount: 30, channelName });
 const result = negotiator.checkResult(attempts);
 
 console.log(attempts);
+console.log("------------------");
 console.log(result);

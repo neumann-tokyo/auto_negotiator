@@ -104,11 +104,12 @@ export function defineAgent({ channelName, agentName, topic, actionFn }) {
 export function negotiate({ attemptsCount, channelName }) {
 	const responseChannelName = `${channelName}-response`;
 	const channel = diagnostics_channel.channel(channelName);
-	const attempts = [[]];
 
 	if (!channel.hasSubscribers) {
 		throw new Error("No Agents");
 	}
+
+	const attempts = [...Array(attemptsCount).keys()].map(() => []);
 
 	// id: integer => 何度目かの思考であるかを示すid
 	// agentName: string => エージェント名
