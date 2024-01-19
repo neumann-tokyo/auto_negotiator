@@ -14,32 +14,30 @@ test("negotiate", (t) => {
 	t.test("attempts count 1", () => {
 		const channelName = "test1";
 
-		const agent1Action = ({ data, topic }) => {
-			return {
-				id: data.id,
-				bid: 100.1,
-				agentName: "agent1",
-				type: "offer",
-			};
-		};
 		defineAgent({
 			channelName,
+			agentName: "agent1",
 			topic: {},
-			actionFn: agent1Action,
+			actionFn: ({ data, topic }) => {
+				return {
+					id: data.id,
+					bid: 100.1,
+					type: "offer",
+				};
+			},
 		});
 
-		const agent2Action = ({ data, topic }) => {
-			return {
-				id: data.id,
-				bid: 95.1,
-				agentName: "agent2",
-				type: "offer",
-			};
-		};
 		defineAgent({
 			channelName,
 			topic: {},
-			actionFn: agent2Action,
+			agentName: "agent2",
+			actionFn: ({ data, topic }) => {
+				return {
+					id: data.id,
+					bid: 95.1,
+					type: "offer",
+				};
+			},
 		});
 
 		const attempts = negotiate({ attemptsCount: 1, channelName });

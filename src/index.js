@@ -1,6 +1,21 @@
 import * as diagnostics_channel from "node:diagnostics_channel";
 
 // channelName: string
+// agentName: string
+// topic: {
+//    name: string,
+//  	description: string,
+//  	discount_factor: double,
+//  	reservation: double,
+//  	issues: Array<{
+//  		name: string,
+//  		weight: double,
+//  		items: Array<{
+//  			name: string,
+//  			evaluation: double,
+//  		}>
+//  	}>,
+// }
 // actionFn: ({
 //   data: {
 // 		id: integer,
@@ -11,33 +26,19 @@ import * as diagnostics_channel from "node:diagnostics_channel";
 // 		attemptsCount: integer,
 // 		responseChannelName: string
 // 	},
-// 	topic: {
-//    name: string,
-// 		description: string,
-// 		discount_factor: double,
-// 		reservation: double,
-// 		issues: Array<{
-// 			name: string,
-// 			weight: double,
-// 			items: Array<{
-// 				name: string,
-// 				evaluation: double,
-// 			}>
-// 		}>,
-// 	}
+//  topic: Topic,
 // },) => {
 // 	id: integer,
 // 	bid: double,
-// 	agentName: string,
 // 	type: "offer" | "accept" | "reject",
 // }
-export function defineAgent({ channelName, topic, actionFn }) {
+export function defineAgent({ channelName, agentName, topic, actionFn }) {
 	const onMessage = (data, _name) => {
 		const responseChannel = diagnostics_channel.channel(
 			data.responseChannelName,
 		);
 		const response = actionFn({ data, topic });
-		responseChannel.publish(response);
+		responseChannel.publish({ ...response, agentName });
 	};
 
 	diagnostics_channel.subscribe(channelName, onMessage);
