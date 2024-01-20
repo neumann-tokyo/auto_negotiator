@@ -8,15 +8,15 @@ export const topic: Topic = {
 	issues: [
 		{
 			name: "Staple food",
-			weight: 0.5,
+			weight: 0.9,
 			items: [
 				{
 					name: "Rice",
-					evaluation: 3,
+					evaluation: 1,
 				},
 				{
 					name: "Noodles",
-					evaluation: 2,
+					evaluation: 8,
 				},
 				{
 					name: "Bread",
@@ -26,19 +26,19 @@ export const topic: Topic = {
 		},
 		{
 			name: "Main dish",
-			weight: 0.5,
+			weight: 0.1,
 			items: [
 				{
 					name: "Steak",
-					evaluation: 1,
+					evaluation: 5,
 				},
 				{
 					name: "Fish",
-					evaluation: 2,
+					evaluation: 4,
 				},
 				{
 					name: "Chicken",
-					evaluation: 3,
+					evaluation: 1,
 				},
 			],
 		},

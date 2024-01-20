@@ -4,15 +4,17 @@ import * as types from "./types";
 export function currentAttempt({
 	id,
 	attempts,
-}: { id: number; attempts: Array<Array<types.Status>> }) {
-	const idNumber = Number(id);
-	return attempts[idNumber];
+}: {
+	id: number;
+	attempts: Array<Array<types.Status>>;
+}): Array<types.Status> {
+	return attempts[id];
 }
 
 export function progress({
 	id,
 	attemptsCount,
-}: { id: number; attemptsCount: number }) {
+}: { id: number; attemptsCount: number }): number {
 	return id / attemptsCount;
 }
 
@@ -62,7 +64,7 @@ export function concessionValueToChoices({
 	normalizedTopic: types.NormalizedTopic;
 	concessionValue: number;
 	maxAttempts?: number;
-}): Array<types.Choice> {
+}): types.ChoicesWithThreshold {
 	let maxChoicesWithThreshold: types.ChoicesWithThreshold | undefined;
 
 	for (let i = 0; i < maxAttempts; i++) {
@@ -79,10 +81,12 @@ export function concessionValueToChoices({
 			break;
 		}
 
-		if (
-			maxChoicesWithThreshold != null &&
-			maxChoicesWithThreshold.threshold < newChoicesWithThreshold.threshold
-		) {
+		if (maxChoicesWithThreshold == null) {
+			maxChoicesWithThreshold = newChoicesWithThreshold;
+			continue;
+		}
+
+		if (maxChoicesWithThreshold.threshold < newChoicesWithThreshold.threshold) {
 			maxChoicesWithThreshold = newChoicesWithThreshold;
 		}
 	}
@@ -91,5 +95,5 @@ export function concessionValueToChoices({
 		throw new Error("maxChoicesWithThreshold is undefined");
 	}
 
-	return maxChoicesWithThreshold.choices;
+	return maxChoicesWithThreshold;
 }

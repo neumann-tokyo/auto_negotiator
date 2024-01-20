@@ -3,13 +3,15 @@ import * as types from "./types";
 
 export function normalizeTopic(topic: types.Topic): types.NormalizedTopic {
 	const newIssues = topic.issues.map((issue) => {
-		const maxEvaluation = Math.max(
-			...issue.items.map((item) => item.evaluation),
+		const totalEvaluation = issue.items.reduce(
+			(t, item) => t + item.evaluation,
+			0.0,
 		);
 		const newItems = issue.items.map((item) => {
 			return {
 				...item,
-				normalizedEvaluation: (item.evaluation / maxEvaluation) * issue.weight,
+				normalizedEvaluation:
+					(item.evaluation * issue.weight) / totalEvaluation,
 			};
 		});
 
@@ -81,16 +83,14 @@ export function negotiate({
 	// concessionValue: double => 提案の納得度(効用値)
 	// type: "offer" | "accept" | "reject" => レスポンス種別
 	const onResponseMessage = (
-		{ id, agentName, choices, concessionValue, type }: types.AgentResponse,
+		{ id, ...status }: types.AgentResponse,
 		_name: string,
 	): void => {
-		const idNumber = Number(id);
-		if (attempts[idNumber] == null) {
-			attempts[idNumber] = [];
+		if (attempts[id] == null) {
+			attempts[id] = [];
 		}
 
-		const status: types.Status = { agentName, choices, concessionValue, type };
-		attempts[idNumber].push(status);
+		attempts[id].push(status);
 	};
 	diagnostics_channel.subscribe(
 		responseChannelName,
@@ -113,11 +113,22 @@ export function checkResult(attempts: Array<Array<types.Status>>) {
 	for (let i = 0; i < attempts.length; i++) {
 		const attempt = attempts[i];
 
-		if (attempt.every((status) => status?.type === "accept")) {
-			return { isAgreed: true, id: i, result: attempt };
-		}
-		if (attempt.some((status) => status?.type === "reject")) {
+		if (attempt.some((status) => status.type === types.AtemptType.Reject)) {
 			return { isAgreed: false, id: i, result: attempt };
+		}
+
+		const acceptedStatuses = attempt.filter(
+			(status) => status.type === types.AtemptType.Accept,
+		);
+		const offeredStatuses = attempt.filter(
+			(status) => status.type === types.AtemptType.Offer,
+		);
+
+		if (
+			acceptedStatuses.length === attempt.length - 1 &&
+			offeredStatuses.length === 1
+		) {
+			return { isAgreed: true, id: i, result: attempt };
 		}
 	}
 

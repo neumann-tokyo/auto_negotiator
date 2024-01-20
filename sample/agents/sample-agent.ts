@@ -1,47 +1,43 @@
 import * as helper from "../../src/helper";
 import * as types from "../../src/types";
 
-export function sampleAgent(
-	{
-		data: { id, attempts, attemptsCount, responseChannelName },
-		topic,
-		normalizedTopic,
-	}: types.ActionFnParams,
-	_name: string,
-): types.ActionFnResponse {
+export function sampleAgent({
+	data: { id, attempts, attemptsCount },
+	normalizedTopic,
+}: types.ActionFnParams): types.ActionFnResponse {
 	const currentAttempt = helper.currentAttempt({ id, attempts });
 	const progress = helper.progress({ id, attemptsCount });
 	const concessionValue = 1.0 - progress;
 
-	// currentAttempt に他の agent の status がはいっている
-	const hasOtherAgentOffer =
-		currentAttempt != null && currentAttempt.length > 0;
+	for (const status of currentAttempt) {
+		if (status.type === types.AtemptType.Offer) {
+			const anotherConcessionValue = helper.choicesToConcessionValue({
+				choices: status.choices,
+			});
 
-	if (!hasOtherAgentOffer) {
-		for (const status of currentAttempt) {
-			if (status.type === types.AtemptType.Offer) {
-				const anotherConcessionValue = helper.choicesToConcessionValue({
+			// console.log("concessionValue: ", concessionValue);
+			// console.log("anotherConcessionValue: ", anotherConcessionValue);
+
+			if (concessionValue < anotherConcessionValue) {
+				return {
+					id,
 					choices: status.choices,
-				});
-
-				if (concessionValue < anotherConcessionValue) {
-					return {
-						choices: status.choices,
-						concessionValue: anotherConcessionValue,
-						type: types.AtemptType.Accept,
-					};
-				}
+					concessionValue: anotherConcessionValue,
+					type: types.AtemptType.Accept,
+				};
 			}
 		}
 	}
 
-	const choices = helper.concessionValueToChoices({
+	const { choices, threshold } = helper.concessionValueToChoices({
 		normalizedTopic,
 		concessionValue,
 	});
 	return {
+		id,
 		choices,
 		concessionValue,
+		// threshold,
 		type: types.AtemptType.Offer,
 	};
 }

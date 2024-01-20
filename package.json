@@ -12,7 +12,6 @@
 	"scripts": {
 		"dev": "tsx sample/run.ts",
 		"build": "rm -rf ./dist && mkdir -p dist && tsc",
-		"test:all": "NODE_ENV=test tsx --test test/*.test.ts",
 		"test": "NODE_ENV=test tsx --test",
 		"check": "biome check --apply ./src ./sample",
 		"repl": "tsx",

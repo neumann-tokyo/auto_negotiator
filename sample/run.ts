@@ -28,8 +28,6 @@ negotiator.defineAgent({
 const attempts = negotiator.negotiate({ attemptsCount: 30, channelName });
 const result = negotiator.checkResult(attempts);
 
-console.log(attempts);
+// console.log(attempts);
 console.log("------------------");
-console.log(result);
-
-// TODO 実行結果の 3 つの agent の concessionValue が同じなのがバグのような気がする
+console.log(JSON.stringify(result, null, 4));

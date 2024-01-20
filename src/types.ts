@@ -72,15 +72,14 @@ export type ActionFnParams = {
 };
 
 export type ActionFnResponse = {
+	id: number;
 	choices: Array<Choice>;
 	concessionValue: number;
 	type: AtemptType;
+	threshold?: number;
 };
 
-export type ActionFn = (
-	params: ActionFnParams,
-	name: string,
-) => ActionFnResponse;
+export type ActionFn = (params: ActionFnParams) => ActionFnResponse;
 
 export type AgentResponse = {
 	id: number;
