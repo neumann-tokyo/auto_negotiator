@@ -3,6 +3,7 @@ import { test } from "node:test";
 import { topic as agent1Topic } from "../sample/topic/dinner/agent1";
 import { topic as agent2Topic } from "../sample/topic/dinner/agent2";
 import { checkResult, defineAgent, negotiate } from "../src/index";
+import * as types from "../src/types";
 
 test("negotiate", (t) => {
 	// t.test("when no agents", () => {
@@ -20,7 +21,7 @@ test("negotiate", (t) => {
 			channelName,
 			agentName: "agent1",
 			topic: agent1Topic,
-			actionFn: ({ data }) => {
+			actionFn: ({ data }: types.ActionFnParams): types.ActionFnResponse => {
 				return {
 					id: data.id,
 					choices: [
@@ -42,7 +43,7 @@ test("negotiate", (t) => {
 						},
 					],
 					concessionValue: 0.7654321,
-					type: "offer",
+					type: types.AtemptType.Offer,
 				};
 			},
 		});
@@ -51,7 +52,7 @@ test("negotiate", (t) => {
 			channelName,
 			agentName: "agent2",
 			topic: agent2Topic,
-			actionFn: ({ data }) => {
+			actionFn: ({ data }: types.ActionFnParams): types.ActionFnResponse => {
 				return {
 					id: data.id,
 					choices: [
@@ -73,7 +74,7 @@ test("negotiate", (t) => {
 						},
 					],
 					concessionValue: 0.1234567,
-					type: "offer",
+					type: types.AtemptType.Offer,
 				};
 			},
 		});

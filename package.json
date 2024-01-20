@@ -10,10 +10,10 @@
 		"pnpm": ">=8.0.0"
 	},
 	"scripts": {
-		"dev": "ts-node src/client.ts",
+		"dev": "tsx sample/run.ts",
 		"build": "rm -rf ./dist && mkdir -p dist && tsc",
-		"test:all": "NODE_ENV=test node --loader tsx --test test/*.test.ts",
-		"test": "NODE_ENV=test node --test",
+		"test:all": "NODE_ENV=test tsx --test test/*.test.ts",
+		"test": "NODE_ENV=test tsx --test",
 		"check": "biome check --apply ./src ./sample",
 		"repl": "tsx",
 		"postinstall": "lefthook install"
