@@ -139,13 +139,11 @@ export function checkResult(attempts: Array<Array<types.Status>>) {
 	};
 }
 
-// TODO negotiation の結果として次を知りたいので attempts から
-//      下記のフォーマットに変換する関数も必要
-//      次のフォーマットは attempt 1回毎に出力できる
-//
 // last turn: 0.12                       // 全Turn数のうちの何%か
 // agreement bid: [0, 0]                 // 取得する item の index (issueの数だけある)
 // parato distance: 0.29015362           // パレート距離 (これが何かは調べる)
 // nash distance: 0.33603564             // ナッシュ距離 (これが何かは調べる)
 // LinearAgent : 0.7585775750291838      // LinearAgent の 納得度？
 // ConsederAgent : 0.5057183833527892    // ConsederAgent の 納得度？
+
+// TODO ↑の LinearAgent の値は consessionValue をそのまま出しているわけではないので、実装する

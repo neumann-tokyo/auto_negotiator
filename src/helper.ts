@@ -97,3 +97,7 @@ export function concessionValueToChoices({
 
 	return maxChoicesWithThreshold;
 }
+
+export function prettyPrint(a: unknown): void {
+	console.log(JSON.stringify(a, null, 4));
+}

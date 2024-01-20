@@ -1,3 +1,4 @@
+import { prettyPrint } from "../src/helper";
 import * as negotiator from "../src/index";
 import { sampleAgent } from "./agents/sample-agent";
 import { topic as agent1Topic } from "./topic/dinner/agent1";
@@ -28,6 +29,6 @@ negotiator.defineAgent({
 const attempts = negotiator.negotiate({ attemptsCount: 30, channelName });
 const result = negotiator.checkResult(attempts);
 
-// console.log(attempts);
+console.log(attempts);
 console.log("------------------");
-console.log(JSON.stringify(result, null, 4));
+prettyPrint(result);
