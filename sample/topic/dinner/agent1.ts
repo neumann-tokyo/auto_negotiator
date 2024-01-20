@@ -1,4 +1,6 @@
-export const topic = {
+import { Topic } from "../../../src/types";
+
+export const topic: Topic = {
 	name: "Dinner",
 	description: "What should we have dinner?",
 	discount_factor: 0.1,

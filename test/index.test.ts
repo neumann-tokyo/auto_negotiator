@@ -1,8 +1,8 @@
 import * as assert from "node:assert";
 import { test } from "node:test";
-import { topic as agent1Topic } from "../sample/topic/dinner/agent1.js";
-import { topic as agent2Topic } from "../sample/topic/dinner/agent2.js";
-import { checkResult, defineAgent, negotiate } from "../src/index.js";
+import { topic as agent1Topic } from "../sample/topic/dinner/agent1";
+import { topic as agent2Topic } from "../sample/topic/dinner/agent2";
+import { checkResult, defineAgent, negotiate } from "../src/index";
 
 test("negotiate", (t) => {
 	// t.test("when no agents", () => {

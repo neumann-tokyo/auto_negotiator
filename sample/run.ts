@@ -1,8 +1,8 @@
-import * as negotiator from "../src/index.js";
-import { sampleAgent } from "./agents/sample-agent.js";
-import { topic as agent1Topic } from "./topic/dinner/agent1.js";
-import { topic as agent2Topic } from "./topic/dinner/agent2.js";
-import { topic as agent3Topic } from "./topic/dinner/agent3.js";
+import * as negotiator from "../src/index";
+import { sampleAgent } from "./agents/sample-agent";
+import { topic as agent1Topic } from "./topic/dinner/agent1";
+import { topic as agent2Topic } from "./topic/dinner/agent2";
+import { topic as agent3Topic } from "./topic/dinner/agent3";
 
 const channelName = "dinner";
 
@@ -31,3 +31,5 @@ const result = negotiator.checkResult(attempts);
 console.log(attempts);
 console.log("------------------");
 console.log(result);
+
+// TODO 実行結果の 3 つの agent の concessionValue が同じなのがバグのような気がする

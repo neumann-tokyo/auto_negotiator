@@ -1,37 +1,7 @@
 import * as diagnostics_channel from "node:diagnostics_channel";
+import * as types from "./types";
 
-// (topic: Topic) => NormalizedTopic
-//
-// type Topic: {
-//    name: string,
-//  	description: string,
-//  	discount_factor: double,
-//  	reservation: double,
-//  	issues: Array<{
-//  		name: string,
-//  		weight: double,
-//  		items: Array<{
-//  			name: string,
-//  			evaluation: integer,
-//  		}>
-//  	}>,
-// }
-// type NormalizedTopic: {
-//    name: string,
-//  	description: string,
-//  	discount_factor: double,
-//  	reservation: double,
-//  	issues: Array<{
-//  		name: string,
-//  		weight: double,
-//  		items: Array<{
-//  			name: string,
-//  			evaluation: integer,
-// 			  normalizedEvaluation: double,
-//  		}>
-//  	}>,
-// }
-export function normalizeTopic(topic) {
+export function normalizeTopic(topic: types.Topic): types.NormalizedTopic {
 	const newIssues = topic.issues.map((issue) => {
 		const maxEvaluation = Math.max(
 			...issue.items.map((item) => item.evaluation),
@@ -55,53 +25,45 @@ export function normalizeTopic(topic) {
 	};
 }
 
-// channelName: string
-// agentName: string
-// topic: Topic
-// actionFn: ({
-//   data: {
-// 		id: integer,
-// 		attempts: Array<{
-// 			agentName: string,
-// 			choices: Array<Choice>,
-//      concessionValue: double,
-// 			type: "offer" | "accept" | "reject"}>,
-// 		attemptsCount: integer,
-// 		responseChannelName: string
-// 	},
-//  topic: Topic,
-//  normalizedTopic: NormalizedTopic,
-// },) => {
-// 	id: integer,
-// 	choices: Array<Choice>,
-//  concessionValue: double,
-// 	type: "offer" | "accept" | "reject",
-// }
-//
-// type Choices: {
-// 	issueName: string,
-// 	item: {
-// 		name: string,
-// 		evaluation: integer,
-//    normalizedEvaluation: double
-// 	}
-// }
-export function defineAgent({ channelName, agentName, topic, actionFn }) {
+export function defineAgent({
+	channelName,
+	agentName,
+	topic,
+	actionFn,
+}: {
+	channelName: string;
+	agentName: string;
+	topic: types.Topic;
+	actionFn: types.ActionFn;
+}): void {
 	const normalizedTopic = normalizeTopic(topic);
-	const onMessage = (data, _name) => {
+	const onMessage = (data: types.AgentInput, _name: string): void => {
 		const responseChannel = diagnostics_channel.channel(
 			data.responseChannelName,
 		);
-		const response = actionFn({ data, topic, normalizedTopic });
+		const response: types.ActionFnResponse = actionFn({
+			data,
+			topic,
+			normalizedTopic,
+		});
 		responseChannel.publish({ ...response, agentName });
 	};
 
-	diagnostics_channel.subscribe(channelName, onMessage);
+	diagnostics_channel.subscribe(
+		channelName,
+		onMessage as diagnostics_channel.ChannelListener,
+	);
 }
 
 // attemptsCount: integer
 // channelName: string
-export function negotiate({ attemptsCount, channelName }) {
+export function negotiate({
+	attemptsCount,
+	channelName,
+}: {
+	attemptsCount: number;
+	channelName: string;
+}) {
 	const responseChannelName = `${channelName}-response`;
 	const channel = diagnostics_channel.channel(channelName);
 
@@ -109,7 +71,9 @@ export function negotiate({ attemptsCount, channelName }) {
 		throw new Error("No Agents");
 	}
 
-	const attempts = [...Array(attemptsCount).keys()].map(() => []);
+	const attempts: Array<Array<types.Status>> = [
+		...Array(attemptsCount).keys(),
+	].map(() => []);
 
 	// id: integer => 何度目かの思考であるかを示すid
 	// agentName: string => エージェント名
@@ -117,18 +81,21 @@ export function negotiate({ attemptsCount, channelName }) {
 	// concessionValue: double => 提案の納得度(効用値)
 	// type: "offer" | "accept" | "reject" => レスポンス種別
 	const onResponseMessage = (
-		{ id, agentName, choices, concessionValue, type },
-		_name,
-	) => {
+		{ id, agentName, choices, concessionValue, type }: types.AgentResponse,
+		_name: string,
+	): void => {
 		const idNumber = Number(id);
 		if (attempts[idNumber] == null) {
 			attempts[idNumber] = [];
 		}
 
-		const status = { agentName, choices, concessionValue, type };
+		const status: types.Status = { agentName, choices, concessionValue, type };
 		attempts[idNumber].push(status);
 	};
-	diagnostics_channel.subscribe(responseChannelName, onResponseMessage);
+	diagnostics_channel.subscribe(
+		responseChannelName,
+		onResponseMessage as diagnostics_channel.ChannelListener,
+	);
 
 	for (let i = 0; i < attemptsCount; i++) {
 		channel.publish({
@@ -142,7 +109,7 @@ export function negotiate({ attemptsCount, channelName }) {
 	return attempts;
 }
 
-export function checkResult(attempts) {
+export function checkResult(attempts: Array<Array<types.Status>>) {
 	for (let i = 0; i < attempts.length; i++) {
 		const attempt = attempts[i];
 

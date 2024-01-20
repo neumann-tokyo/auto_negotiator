@@ -1,4 +1,6 @@
-export const topic = {
+import { Topic } from "../../../src/types";
+
+export const topic: Topic = {
 	name: "Dinner",
 	description: "What should we have dinner?",
 	discount_factor: 0.1,
@@ -10,7 +12,7 @@ export const topic = {
 			items: [
 				{
 					name: "Rice",
-					evaluation: 1,
+					evaluation: 3,
 				},
 				{
 					name: "Noodles",
@@ -18,7 +20,7 @@ export const topic = {
 				},
 				{
 					name: "Bread",
-					evaluation: 3,
+					evaluation: 1,
 				},
 			],
 		},
@@ -28,7 +30,7 @@ export const topic = {
 			items: [
 				{
 					name: "Steak",
-					evaluation: 3,
+					evaluation: 1,
 				},
 				{
 					name: "Fish",
@@ -36,7 +38,7 @@ export const topic = {
 				},
 				{
 					name: "Chicken",
-					evaluation: 1,
+					evaluation: 3,
 				},
 			],
 		},

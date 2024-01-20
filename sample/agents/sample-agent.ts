@@ -1,13 +1,14 @@
-import * as helper from "../../src/helper.js";
+import * as helper from "../../src/helper";
+import * as types from "../../src/types";
 
 export function sampleAgent(
 	{
 		data: { id, attempts, attemptsCount, responseChannelName },
 		topic,
 		normalizedTopic,
-	},
-	_name,
-) {
+	}: types.ActionFnParams,
+	_name: string,
+): types.ActionFnResponse {
 	const currentAttempt = helper.currentAttempt({ id, attempts });
 	const progress = helper.progress({ id, attemptsCount });
 	const concessionValue = 1.0 - progress;
@@ -18,17 +19,16 @@ export function sampleAgent(
 
 	if (!hasOtherAgentOffer) {
 		for (const status of currentAttempt) {
-			if (status.type === "offer") {
+			if (status.type === types.AtemptType.Offer) {
 				const anotherConcessionValue = helper.choicesToConcessionValue({
 					choices: status.choices,
 				});
 
 				if (concessionValue < anotherConcessionValue) {
 					return {
-						id,
 						choices: status.choices,
 						concessionValue: anotherConcessionValue,
-						type: "accept",
+						type: types.AtemptType.Accept,
 					};
 				}
 			}
@@ -40,9 +40,8 @@ export function sampleAgent(
 		concessionValue,
 	});
 	return {
-		id,
 		choices,
 		concessionValue,
-		type: "offer",
+		type: types.AtemptType.Offer,
 	};
 }
