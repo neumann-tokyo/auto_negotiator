@@ -18,17 +18,17 @@ export function progress({
 	return id / attemptsCount;
 }
 
-export function choicesToConcessionValue({
+export function choicesToUtility({
 	anotherChoices,
 	normalizedTopic,
 }: {
 	anotherChoices: Array<types.Choice>;
 	normalizedTopic: types.NormalizedTopic;
-}): { concessionValue: number; myChoices: Array<types.Choice> } {
+}): { utility: number; myChoices: Array<types.Choice> } {
 	const myChoices: Array<types.Choice> = [];
 
-	const concessionValue = anotherChoices.reduce(
-		(concessionValue: number, choice: types.Choice): number => {
+	const utility = anotherChoices.reduce(
+		(utility: number, choice: types.Choice): number => {
 			const issue = normalizedTopic.issues.find(
 				(issue) => issue.name === choice.issueName,
 			);
@@ -53,12 +53,12 @@ export function choicesToConcessionValue({
 				item: myChoiceItem,
 			});
 
-			return concessionValue + myChoiceItem.normalizedEvaluation;
+			return utility + myChoiceItem.normalizedEvaluation;
 		},
 		0.0,
 	);
 
-	return { concessionValue, myChoices };
+	return { utility, myChoices };
 }
 
 // choices: issue毎の選択肢の配列

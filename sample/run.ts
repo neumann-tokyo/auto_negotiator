@@ -1,5 +1,5 @@
 import * as negotiator from "../src/index";
-import { sampleAgent } from "./agents/sample-agent";
+import { sampleAgent } from "./agents/sample-agent2";
 import { topic as agent1Topic } from "./topic/dinner/agent1";
 import { topic as agent2Topic } from "./topic/dinner/agent2";
 import { topic as agent3Topic } from "./topic/dinner/agent3";
