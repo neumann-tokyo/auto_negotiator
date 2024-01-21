@@ -6,8 +6,8 @@ export function currentAttempt({
 	attempts,
 }: {
 	id: number;
-	attempts: Array<Array<types.Status>>;
-}): Array<types.Status> {
+	attempts: Array<Array<types.Attempt>>;
+}): Array<types.Attempt> {
 	return attempts[id];
 }
 
@@ -117,4 +117,33 @@ export function concessionValueToChoices({
 	}
 
 	return maxChoicesWithThreshold;
+}
+
+export function calculateUtility({
+	normalizedTopic,
+	id,
+	attemptsCount,
+}: {
+	normalizedTopic: types.NormalizedTopic;
+	id: number;
+	attemptsCount: number;
+}): number {
+	const p = progress({ id, attemptsCount });
+	const total = normalizedTopic.issues.reduce(
+		(t: number, issue: types.NormalizedIssue): number => {
+			let totalEvaluation = issue.items.reduce(
+				(tt: number, item: types.NormalizedItem) => {
+					return tt + item.normalizedEvaluation;
+				},
+				0.0,
+			);
+
+			totalEvaluation = totalEvaluation * normalizedTopic.discount_factor ** p;
+
+			return t + totalEvaluation;
+		},
+		0.0,
+	);
+
+	return total;
 }

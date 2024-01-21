@@ -53,10 +53,9 @@ export type Attempt = {
 	agentName: string;
 	choices: Array<Choice>;
 	concessionValue: number;
+	utility?: number;
 	type: AtemptType;
 };
-
-export type Status = Omit<Attempt, "id">;
 
 export type AgentInput = {
 	id: number;
@@ -71,23 +70,9 @@ export type ActionFnParams = {
 	normalizedTopic: NormalizedTopic;
 };
 
-export type ActionFnResponse = {
-	id: number;
-	choices: Array<Choice>;
-	concessionValue: number;
-	type: AtemptType;
-	threshold?: number;
-};
+export type ActionFnResponse = Omit<Attempt, "agentName">;
 
 export type ActionFn = (params: ActionFnParams) => ActionFnResponse;
-
-export type AgentResponse = {
-	id: number;
-	agentName: string;
-	choices: Array<Choice>;
-	concessionValue: number;
-	type: AtemptType;
-};
 
 export type ChoicesWithThreshold = {
 	threshold: number;
@@ -98,6 +83,6 @@ export type NegotiateResult = {
 	isAgreed: boolean;
 	id: number;
 	attemptsCount: number;
-	conclusion: Array<Status>;
-	allAttempts: Array<Array<Status>>;
+	conclusion: Array<Attempt>;
+	allAttempts: Array<Array<Attempt>>;
 };

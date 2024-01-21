@@ -60,7 +60,7 @@ export function defineAgent({
 function checkFinish({
 	attempt,
 	agentsCount,
-}: { attempt: Array<types.Status>; agentsCount: number }): {
+}: { attempt: Array<types.Attempt>; agentsCount: number }): {
 	isAgreed: boolean;
 	finish: boolean;
 } {
@@ -109,19 +109,20 @@ export function negotiate({
 		throw new Error("No Agents");
 	}
 
-	const attempts: Array<Array<types.Status>> = [
+	const attempts: Array<Array<types.Attempt>> = [
 		...Array(attemptsCount).keys(),
 	].map(() => []);
 
 	const onResponseMessage = (
-		{ id, ...status }: types.AgentResponse,
+		newAttempt: types.Attempt,
 		_name: string,
 	): void => {
+		const id = newAttempt.id;
 		if (attempts[id] == null) {
 			attempts[id] = [];
 		}
 
-		attempts[id].push(status as types.Status);
+		attempts[id].push(newAttempt);
 
 		const { isAgreed, finish } = checkFinish({
 			attempt: attempts[id],

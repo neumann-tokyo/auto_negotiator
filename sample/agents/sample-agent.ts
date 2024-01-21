@@ -8,6 +8,11 @@ export function sampleAgent({
 	const currentAttempt = helper.currentAttempt({ id, attempts });
 	const progress = helper.progress({ id, attemptsCount });
 	const concessionValue = 1.0 - progress;
+	const utility = helper.calculateUtility({
+		normalizedTopic,
+		id,
+		attemptsCount,
+	});
 
 	for (const status of currentAttempt) {
 		if (status.type === types.AtemptType.Offer) {
@@ -16,21 +21,19 @@ export function sampleAgent({
 				normalizedTopic,
 			});
 
-			// console.log("concessionValue: ", concessionValue);
-			// console.log("anotherConcessionValue: ", anotherConcessionValue);
-
 			if (concessionValue < anotherConcessionValue) {
 				return {
 					id,
 					choices: status.choices,
 					concessionValue: anotherConcessionValue,
+					utility,
 					type: types.AtemptType.Accept,
 				};
 			}
 		}
 	}
 
-	const { choices, threshold } = helper.concessionValueToChoices({
+	const { choices } = helper.concessionValueToChoices({
 		normalizedTopic,
 		concessionValue,
 	});
@@ -38,7 +41,7 @@ export function sampleAgent({
 		id,
 		choices,
 		concessionValue,
-		// threshold,
+		utility,
 		type: types.AtemptType.Offer,
 	};
 }
