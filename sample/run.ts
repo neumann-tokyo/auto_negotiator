@@ -1,4 +1,3 @@
-import { prettyPrint } from "../src/helper";
 import * as negotiator from "../src/index";
 import { sampleAgent } from "./agents/sample-agent";
 import { topic as agent1Topic } from "./topic/dinner/agent1";
@@ -32,4 +31,4 @@ const result = negotiator.negotiate({
 	agentsCount: 3,
 });
 
-prettyPrint(result);
+console.log(negotiator.toJSON(result));

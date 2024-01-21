@@ -1,5 +1,5 @@
 // agent から使う便利関数を定義しておく
-import * as types from "./types";
+import * as types from "../../src/types";
 
 export function currentAttempt({
 	id,
@@ -117,8 +117,4 @@ export function concessionValueToChoices({
 	}
 
 	return maxChoicesWithThreshold;
-}
-
-export function prettyPrint(a: unknown): void {
-	console.log(JSON.stringify(a, null, 4));
 }

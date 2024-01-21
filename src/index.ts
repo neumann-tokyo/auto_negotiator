@@ -165,6 +165,10 @@ export function negotiate({
 	return result;
 }
 
+export function toJSON(a: unknown): unknown {
+	return JSON.stringify(a, null, 4);
+}
+
 // last turn: 0.12                       // 全Turn数のうちの何%か
 // agreement bid: [0, 0]                 // 取得する item の index (issueの数だけある)
 // parato distance: 0.29015362           // パレート距離 (これが何かは調べる)

@@ -1,5 +1,5 @@
-import * as helper from "../../src/helper";
 import * as types from "../../src/types";
+import * as helper from "./helper";
 
 export function sampleAgent({
 	data: { id, attempts, attemptsCount },

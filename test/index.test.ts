@@ -2,7 +2,7 @@ import * as assert from "node:assert";
 import { test } from "node:test";
 import { topic as agent1Topic } from "../sample/topic/dinner/agent1";
 import { topic as agent2Topic } from "../sample/topic/dinner/agent2";
-import { checkResult, defineAgent, negotiate } from "../src/index";
+import { defineAgent, negotiate } from "../src/index";
 import * as types from "../src/types";
 
 test("negotiate", (t) => {
@@ -79,63 +79,13 @@ test("negotiate", (t) => {
 			},
 		});
 
-		const attempts = negotiate({ attemptsCount: 1, channelName });
+		const result = negotiate({
+			channelName,
+			attemptsCount: 1,
+			agentsCount: 2,
+		});
 
-		assert.deepEqual(attempts, [
-			[
-				{
-					agentName: "agent1",
-					choices: [
-						{
-							issueName: "Staple food",
-							item: {
-								name: "Rice",
-								evaluation: 3,
-								normalizedEvaluation: 0.5,
-							},
-						},
-						{
-							issueName: "Main dish",
-							item: {
-								name: "Steak",
-								evaluation: 3,
-								normalizedEvaluation: 0.5,
-							},
-						},
-					],
-					concessionValue: 0.7654321,
-					type: "offer",
-				},
-				{
-					agentName: "agent2",
-					choices: [
-						{
-							issueName: "Staple food",
-							item: {
-								name: "Rice",
-								evaluation: 3,
-								normalizedEvaluation: 0.5,
-							},
-						},
-						{
-							issueName: "Main dish",
-							item: {
-								name: "Chicken",
-								evaluation: 3,
-								normalizedEvaluation: 0.5,
-							},
-						},
-					],
-					concessionValue: 0.1234567,
-					type: "offer",
-				},
-			],
-		]);
-
-		const result = checkResult(attempts);
-		assert.equal(result.isAgreed, false);
-		assert.equal(result.id, 0);
-		assert.deepEqual(result.result, [
+		assert.deepEqual(result.conclusion, [
 			{
 				agentName: "agent1",
 				choices: [
