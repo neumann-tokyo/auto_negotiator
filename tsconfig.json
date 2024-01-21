@@ -8,5 +8,5 @@
 		"esModuleInterop": true,
 	},
 	"include": [".", "./src/", "./sample/"],
-	"exclude": ["./dist"]
+	"exclude": ["./dist/", "./test/"]
 }

@@ -87,6 +87,7 @@ test("negotiate", (t) => {
 
 		assert.deepEqual(result.conclusion, [
 			{
+				id: 0,
 				agentName: "agent1",
 				choices: [
 					{
@@ -110,6 +111,7 @@ test("negotiate", (t) => {
 				type: "offer",
 			},
 			{
+				id: 0,
 				agentName: "agent2",
 				choices: [
 					{
