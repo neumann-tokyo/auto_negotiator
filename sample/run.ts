@@ -26,9 +26,10 @@ negotiator.defineAgent({
 	actionFn: sampleAgent,
 });
 
-const attempts = negotiator.negotiate({ attemptsCount: 30, channelName });
-const result = negotiator.checkResult(attempts);
+const result = negotiator.negotiate({
+	channelName,
+	attemptsCount: 30,
+	agentsCount: 3,
+});
 
-console.log(attempts);
-console.log("------------------");
 prettyPrint(result);

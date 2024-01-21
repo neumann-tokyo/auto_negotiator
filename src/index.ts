@@ -57,17 +57,53 @@ export function defineAgent({
 	);
 }
 
-// attemptsCount: integer
-// channelName: string
+function checkFinish({
+	attempt,
+	agentsCount,
+}: { attempt: Array<types.Status>; agentsCount: number }): {
+	isAgreed: boolean;
+	finish: boolean;
+} {
+	if (attempt.some((status) => status.type === types.AtemptType.Reject)) {
+		return { isAgreed: false, finish: true };
+	}
+
+	const acceptedStatuses = attempt.filter(
+		(status) => status.type === types.AtemptType.Accept,
+	);
+	const offeredStatuses = attempt.filter(
+		(status) => status.type === types.AtemptType.Offer,
+	);
+
+	if (
+		acceptedStatuses.length === agentsCount - 1 &&
+		offeredStatuses.length === 1
+	) {
+		return { isAgreed: true, finish: true };
+	}
+
+	return { isAgreed: false, finish: false };
+}
+
 export function negotiate({
-	attemptsCount,
 	channelName,
+	attemptsCount,
+	agentsCount,
 }: {
-	attemptsCount: number;
 	channelName: string;
-}) {
+	attemptsCount: number;
+	agentsCount: number;
+}): types.NegotiateResult {
 	const responseChannelName = `${channelName}-response`;
 	const channel = diagnostics_channel.channel(channelName);
+	let finishFlag = false;
+	const result: types.NegotiateResult = {
+		isAgreed: false,
+		id: 0,
+		attemptsCount: 1,
+		conclusion: [],
+		allAttempts: [],
+	};
 
 	if (!channel.hasSubscribers) {
 		throw new Error("No Agents");
@@ -77,11 +113,6 @@ export function negotiate({
 		...Array(attemptsCount).keys(),
 	].map(() => []);
 
-	// id: integer => 何度目かの思考であるかを示すid
-	// agentName: string => エージェント名
-	// choices: Array<string> => 提案する選択肢
-	// concessionValue: double => 提案の納得度(効用値)
-	// type: "offer" | "accept" | "reject" => レスポンス種別
 	const onResponseMessage = (
 		{ id, ...status }: types.AgentResponse,
 		_name: string,
@@ -90,7 +121,19 @@ export function negotiate({
 			attempts[id] = [];
 		}
 
-		attempts[id].push(status);
+		attempts[id].push(status as types.Status);
+
+		const { isAgreed, finish } = checkFinish({
+			attempt: attempts[id],
+			agentsCount,
+		});
+		if (finish) {
+			finishFlag = true;
+			result.isAgreed = isAgreed;
+			result.id = id;
+			result.attemptsCount = id + 1;
+			result.conclusion = attempts[id];
+		}
 	};
 	diagnostics_channel.subscribe(
 		responseChannelName,
@@ -98,6 +141,10 @@ export function negotiate({
 	);
 
 	for (let i = 0; i < attemptsCount; i++) {
+		if (finishFlag) {
+			break;
+		}
+
 		channel.publish({
 			id: i,
 			attempts: attempts,
@@ -106,37 +153,16 @@ export function negotiate({
 		});
 	}
 
-	return attempts;
-}
-
-export function checkResult(attempts: Array<Array<types.Status>>) {
-	for (let i = 0; i < attempts.length; i++) {
-		const attempt = attempts[i];
-
-		if (attempt.some((status) => status.type === types.AtemptType.Reject)) {
-			return { isAgreed: false, id: i, result: attempt };
-		}
-
-		const acceptedStatuses = attempt.filter(
-			(status) => status.type === types.AtemptType.Accept,
-		);
-		const offeredStatuses = attempt.filter(
-			(status) => status.type === types.AtemptType.Offer,
-		);
-
-		if (
-			acceptedStatuses.length === attempt.length - 1 &&
-			offeredStatuses.length === 1
-		) {
-			return { isAgreed: true, id: i, result: attempt };
-		}
+	if (!finishFlag) {
+		result.isAgreed = false;
+		result.id = attempts.length - 1;
+		result.attemptsCount = attempts.length;
+		result.conclusion = attempts[attempts.length - 1];
 	}
 
-	return {
-		isAgreed: false,
-		id: attempts.length - 1,
-		result: attempts[attempts.length - 1],
-	};
+	result.allAttempts = attempts.filter((attempt) => attempt.length !== 0);
+
+	return result;
 }
 
 // last turn: 0.12                       // 全Turn数のうちの何%か

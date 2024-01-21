@@ -93,3 +93,11 @@ export type ChoicesWithThreshold = {
 	threshold: number;
 	choices: Array<Choice>;
 };
+
+export type NegotiateResult = {
+	isAgreed: boolean;
+	id: number;
+	attemptsCount: number;
+	conclusion: Array<Status>;
+	allAttempts: Array<Array<Status>>;
+};
