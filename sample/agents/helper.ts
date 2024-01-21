@@ -21,9 +21,11 @@ export function progress({
 export function choicesToUtility({
 	anotherChoices,
 	normalizedTopic,
+	progress,
 }: {
 	anotherChoices: Array<types.Choice>;
 	normalizedTopic: types.NormalizedTopic;
+	progress?: number;
 }): { utility: number; myChoices: Array<types.Choice> } {
 	const myChoices: Array<types.Choice> = [];
 
@@ -53,7 +55,14 @@ export function choicesToUtility({
 				item: myChoiceItem,
 			});
 
-			return utility + myChoiceItem.normalizedEvaluation;
+			if (progress == null) {
+				return utility + myChoiceItem.normalizedEvaluation;
+			}
+			return (
+				utility +
+				myChoiceItem.normalizedEvaluation *
+					normalizedTopic.discountFactor ** progress
+			);
 		},
 		0.0,
 	);

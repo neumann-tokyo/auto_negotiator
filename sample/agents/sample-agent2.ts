@@ -29,6 +29,7 @@ export const sampleAgent =
 				const { utility: anotherUtility, myChoices } = helper.choicesToUtility({
 					anotherChoices: status.choices,
 					normalizedTopic,
+					progress,
 				});
 
 				if (utility < anotherUtility) {
