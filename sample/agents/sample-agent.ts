@@ -13,6 +13,7 @@ export function sampleAgent({
 		if (status.type === types.AtemptType.Offer) {
 			const anotherConcessionValue = helper.choicesToConcessionValue({
 				choices: status.choices,
+				normalizedTopic,
 			});
 
 			// console.log("concessionValue: ", concessionValue);

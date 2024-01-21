@@ -20,10 +20,31 @@ export function progress({
 
 export function choicesToConcessionValue({
 	choices,
-}: { choices: Array<types.Choice> }) {
+	normalizedTopic,
+}: { choices: Array<types.Choice>; normalizedTopic: types.NormalizedTopic }) {
 	return choices.reduce(
-		(concessionValue: number, choice: types.Choice): number =>
-			concessionValue + choice.item.normalizedEvaluation,
+		(concessionValue: number, choice: types.Choice): number => {
+			const issue = normalizedTopic.issues.find(
+				(issue) => issue.name === choice.issueName,
+			);
+			if (issue == null) {
+				throw new Error(
+					`issue "${choice.issueName}" is not found in topic "${normalizedTopic.name}"`,
+				);
+			}
+
+			const myChoiceItem: types.NormalizedItem | undefined = issue.items.find(
+				(item) => item.name === choice.item.name,
+			);
+
+			if (myChoiceItem == null) {
+				throw new Error(
+					`item name "${choice.item.name}" is not found in topic "${normalizedTopic.name}"`,
+				);
+			}
+
+			return concessionValue + myChoiceItem.normalizedEvaluation;
+		},
 		0.0,
 	);
 }
