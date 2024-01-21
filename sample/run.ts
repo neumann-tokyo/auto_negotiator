@@ -6,23 +6,27 @@ import { topic as agent3Topic } from "./topic/dinner/agent3";
 
 const channelName = "dinner";
 
+const linearAgent = sampleAgent((progress) => 1.0 - progress);
+const doubleAgent = sampleAgent((progress) => 1.0 - progress * 2);
+const exponentialAgent = sampleAgent((progress) => 1.0 - progress ** 2);
+
 negotiator.defineAgent({
 	channelName: channelName,
-	agentName: "agent1",
+	agentName: "linearAgent",
 	topic: agent1Topic,
-	actionFn: sampleAgent,
+	actionFn: linearAgent,
 });
 negotiator.defineAgent({
 	channelName: channelName,
-	agentName: "agent2",
+	agentName: "doubleAgent",
 	topic: agent2Topic,
-	actionFn: sampleAgent,
+	actionFn: doubleAgent,
 });
 negotiator.defineAgent({
 	channelName: channelName,
-	agentName: "agent3",
+	agentName: "exponentialAgent",
 	topic: agent3Topic,
-	actionFn: sampleAgent,
+	actionFn: exponentialAgent,
 });
 
 const result = negotiator.negotiate({
