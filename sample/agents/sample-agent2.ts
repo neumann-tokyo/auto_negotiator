@@ -33,17 +33,11 @@ export const sampleAgent =
 				});
 
 				if (utility < anotherUtility) {
-					const newUtility = helper.calculateUtility({
-						discountFactor: normalizedTopic.discountFactor,
-						progress,
-						choices: myChoices,
-					});
-
 					return {
 						id,
 						choices: myChoices,
-						concessionValue: anotherUtility,
-						utility: newUtility,
+						concessionValue: concessionValue,
+						utility: anotherUtility,
 						type: types.AtemptType.Accept,
 					};
 				}
