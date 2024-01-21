@@ -29,7 +29,7 @@ export type Choice = {
 export type Topic = {
 	name: string;
 	description: string;
-	discount_factor: number;
+	discountFactor: number;
 	reservation: number;
 	issues: Array<Issue>;
 };
@@ -37,7 +37,7 @@ export type Topic = {
 export type NormalizedTopic = {
 	name: string;
 	description: string;
-	discount_factor: number;
+	discountFactor: number;
 	reservation: number;
 	issues: Array<NormalizedIssue>;
 };

@@ -19,10 +19,15 @@ export function progress({
 }
 
 export function choicesToConcessionValue({
-	choices,
+	anotherChoices,
 	normalizedTopic,
-}: { choices: Array<types.Choice>; normalizedTopic: types.NormalizedTopic }) {
-	return choices.reduce(
+}: {
+	anotherChoices: Array<types.Choice>;
+	normalizedTopic: types.NormalizedTopic;
+}): { concessionValue: number; myChoices: Array<types.Choice> } {
+	const myChoices: Array<types.Choice> = [];
+
+	const concessionValue = anotherChoices.reduce(
 		(concessionValue: number, choice: types.Choice): number => {
 			const issue = normalizedTopic.issues.find(
 				(issue) => issue.name === choice.issueName,
@@ -43,10 +48,17 @@ export function choicesToConcessionValue({
 				);
 			}
 
+			myChoices.push({
+				issueName: issue.name,
+				item: myChoiceItem,
+			});
+
 			return concessionValue + myChoiceItem.normalizedEvaluation;
 		},
 		0.0,
 	);
+
+	return { concessionValue, myChoices };
 }
 
 // choices: issue毎の選択肢の配列
@@ -120,30 +132,17 @@ export function concessionValueToChoices({
 }
 
 export function calculateUtility({
-	normalizedTopic,
-	id,
-	attemptsCount,
+	discountFactor,
+	progress,
+	choices,
 }: {
-	normalizedTopic: types.NormalizedTopic;
-	id: number;
-	attemptsCount: number;
+	discountFactor: number;
+	progress: number;
+	choices: Array<types.Choice>;
 }): number {
-	const p = progress({ id, attemptsCount });
-	const total = normalizedTopic.issues.reduce(
-		(t: number, issue: types.NormalizedIssue): number => {
-			let totalEvaluation = issue.items.reduce(
-				(tt: number, item: types.NormalizedItem) => {
-					return tt + item.normalizedEvaluation;
-				},
-				0.0,
-			);
-
-			totalEvaluation = totalEvaluation * normalizedTopic.discount_factor ** p;
-
-			return t + totalEvaluation;
-		},
-		0.0,
-	);
+	const total = choices.reduce((t: number, choice: types.Choice): number => {
+		return t + choice.item.normalizedEvaluation * discountFactor ** progress;
+	}, 0.0);
 
 	return total;
 }
