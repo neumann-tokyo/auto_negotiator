@@ -1,5 +1,5 @@
 // agent から使う便利関数を定義しておく
-import * as types from "../../src/types";
+import * as types from "./types";
 
 export function currentAttempt({
 	id,
@@ -18,7 +18,7 @@ export function progress({
 	return id / attemptsCount;
 }
 
-export function choicesToUtility({
+export function calculateUtilityFromAnotherChoices({
 	anotherChoices,
 	normalizedTopic,
 	progress,
@@ -70,7 +70,6 @@ export function choicesToUtility({
 	return { utility, myChoices };
 }
 
-// choices: issue毎の選択肢の配列
 function calculateThreshold({
 	choices,
 }: { choices: Array<types.Choice> }): number {
@@ -97,7 +96,6 @@ function randomChoiceFromIssue(issue: types.NormalizedIssue): types.Choice {
 	};
 }
 
-// issues の normalizedEvaluation の合計値 + 0.001 をしきい値として、それが concession_value 以上になる choice の組み合わせをランダムに選んで作る
 export function concessionValueToChoices({
 	normalizedTopic,
 	concessionValue,
