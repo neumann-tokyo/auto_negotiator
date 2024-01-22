@@ -2,8 +2,9 @@ import * as assert from "node:assert";
 import { test } from "node:test";
 import { topic as agent1Topic } from "../sample/topic/dinner/agent1";
 import { topic as agent2Topic } from "../sample/topic/dinner/agent2";
+import { AtemptType } from "../src/enums";
 import { defineAgent, negotiate } from "../src/index";
-import * as types from "../src/types";
+import type * as types from "../src/types";
 
 test("negotiate", (t) => {
 	// t.test("when no agents", () => {
@@ -43,7 +44,7 @@ test("negotiate", (t) => {
 						},
 					],
 					concessionValue: 0.7654321,
-					type: types.AtemptType.Offer,
+					type: AtemptType.Offer,
 				};
 			},
 		});
@@ -74,7 +75,7 @@ test("negotiate", (t) => {
 						},
 					],
 					concessionValue: 0.1234567,
-					type: types.AtemptType.Offer,
+					type: AtemptType.Offer,
 				};
 			},
 		});

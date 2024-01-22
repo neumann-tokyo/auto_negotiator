@@ -1,5 +1,5 @@
 // agent から使う便利関数を定義しておく
-import * as types from "./types";
+import type * as types from "./types.js";
 
 export function currentAttempt({
 	id,

@@ -1,5 +1,6 @@
-import * as helper from "./helper";
-import * as types from "./types";
+import { AtemptType } from "./enums.js";
+import * as helper from "./helper.js";
+import type * as types from "./types.js";
 
 // MEMO concessionValueではなく効用値(utility)で比較するように変更した
 // たぶん sample-agent.ts のほうが誤り
@@ -25,7 +26,7 @@ export const sampleAgent =
 		});
 
 		for (const status of currentAttempt) {
-			if (status.type === types.AtemptType.Offer) {
+			if (status.type === AtemptType.Offer) {
 				const { utility: anotherUtility, myChoices } =
 					helper.calculateUtilityFromAnotherChoices({
 						anotherChoices: status.choices,
@@ -39,7 +40,7 @@ export const sampleAgent =
 						choices: myChoices,
 						concessionValue: concessionValue,
 						utility: anotherUtility,
-						type: types.AtemptType.Accept,
+						type: AtemptType.Accept,
 					};
 				}
 			}
@@ -50,6 +51,6 @@ export const sampleAgent =
 			choices,
 			concessionValue,
 			utility,
-			type: types.AtemptType.Offer,
+			type: AtemptType.Offer,
 		};
 	};

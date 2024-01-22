@@ -1,4 +1,4 @@
-import { Topic } from "../../../src/types";
+import type { Topic } from "../../../src/types";
 
 export const topic: Topic = {
 	name: "Dinner",

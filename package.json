@@ -1,17 +1,17 @@
 {
 	"name": "auto_negotiator",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Auto negotiation by Agent",
 	"main": "src/index.js",
 	"type": "module",
 	"engines": {
-		"node": ">=18",
-		"npm": ">=8",
+		"node": ">=18.0.0",
+		"npm": ">=8.0.0",
 		"pnpm": ">=8.0.0"
 	},
 	"scripts": {
 		"dev": "tsx sample/run.ts",
-		"build": "rm -rf ./dist && mkdir -p dist && tsc",
+		"build": "rm -rf ./dist && mkdir -p dist && tsc --build",
 		"test": "NODE_ENV=test tsx --test",
 		"check": "biome check --apply ./src ./sample",
 		"repl": "tsx",
@@ -23,7 +23,7 @@
 	},
 	"keywords": ["Auto Negotiation"],
 	"author": "kbaba1001",
-	"license": "MIT License",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/neumann-tokyo/auto_negotiator/issues"
 	},
@@ -34,5 +34,29 @@
 		"lefthook": "^1.5.5",
 		"tsx": "^4.7.0",
 		"typescript": "^5.3.3"
+	},
+	"files": ["./dist/"],
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./sample-agent": {
+			"types": "./dist/sample-agent.d.ts",
+			"import": "./dist/sample-agent.js"
+		},
+		"./helper": {
+			"types": "./dist/helper.d.ts",
+			"import": "./dist/helper.js"
+		},
+		"./types": {
+			"types": "./dist/types.d.ts",
+			"import": "./dist/types.js"
+		},
+		"./enums": {
+			"types": "./dist/enums.d.ts",
+			"import": "./dist/enums.js"
+		}
 	}
 }

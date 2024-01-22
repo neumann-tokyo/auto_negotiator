@@ -1,5 +1,6 @@
 import * as diagnostics_channel from "node:diagnostics_channel";
-import * as types from "./types";
+import { AtemptType } from "./enums.js";
+import type * as types from "./types.js";
 
 export function normalizeTopic(topic: types.Topic): types.NormalizedTopic {
 	const newIssues = topic.issues.map((issue) => {
@@ -64,15 +65,15 @@ function checkFinish({
 	isAgreed: boolean;
 	finish: boolean;
 } {
-	if (attempt.some((status) => status.type === types.AtemptType.Reject)) {
+	if (attempt.some((status) => status.type === AtemptType.Reject)) {
 		return { isAgreed: false, finish: true };
 	}
 
 	const acceptedStatuses = attempt.filter(
-		(status) => status.type === types.AtemptType.Accept,
+		(status) => status.type === AtemptType.Accept,
 	);
 	const offeredStatuses = attempt.filter(
-		(status) => status.type === types.AtemptType.Offer,
+		(status) => status.type === AtemptType.Offer,
 	);
 
 	if (

@@ -1,3 +1,5 @@
+import { AtemptType } from "./enums.js";
+
 export type Item = {
 	name: string;
 	evaluation: number;
@@ -41,12 +43,6 @@ export type NormalizedTopic = {
 	reservation: number;
 	issues: Array<NormalizedIssue>;
 };
-
-export enum AtemptType {
-	Offer = "offer",
-	Accept = "accept",
-	Reject = "reject",
-}
 
 export type Attempt = {
 	id: number;

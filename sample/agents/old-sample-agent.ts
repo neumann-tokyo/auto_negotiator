@@ -1,5 +1,6 @@
+import { AtemptType } from "../../src/enums";
 import * as helper from "../../src/helper";
-import * as types from "../../src/types";
+import type * as types from "../../src/types";
 
 // MEMO もともとの Python のコードを再現したもの https://github.com/TomoyaFukui/Jupiter
 export const sampleAgent =
@@ -14,7 +15,7 @@ export const sampleAgent =
 		const concessionValue = concessionValueFn(progress);
 
 		for (const status of currentAttempt) {
-			if (status.type === types.AtemptType.Offer) {
+			if (status.type === AtemptType.Offer) {
 				const { utility: anotherUtility, myChoices } =
 					helper.calculateUtilityFromAnotherChoices({
 						anotherChoices: status.choices,
@@ -33,7 +34,7 @@ export const sampleAgent =
 						choices: myChoices,
 						concessionValue: anotherUtility,
 						utility,
-						type: types.AtemptType.Accept,
+						type: AtemptType.Accept,
 					};
 				}
 			}
@@ -53,6 +54,6 @@ export const sampleAgent =
 			choices,
 			concessionValue,
 			utility,
-			type: types.AtemptType.Offer,
+			type: AtemptType.Offer,
 		};
 	};
