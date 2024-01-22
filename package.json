@@ -1,21 +1,17 @@
 {
 	"name": "auto_negotiator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Auto negotiation by Agent",
 	"main": "src/index.js",
 	"type": "module",
 	"engines": {
-		"node": ">=18.0.0",
-		"npm": ">=8.0.0",
-		"pnpm": ">=8.0.0"
+		"node": ">=18.0.0"
 	},
 	"scripts": {
 		"dev": "tsx sample/run.ts",
 		"build": "rm -rf ./dist && mkdir -p dist && tsc --build",
 		"test": "NODE_ENV=test tsx --test",
-		"check": "biome check --apply ./src ./sample",
-		"repl": "tsx",
-		"postinstall": "lefthook install"
+		"check": "biome check --apply ./src ./sample"
 	},
 	"repository": {
 		"type": "git",
