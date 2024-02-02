@@ -8,7 +8,7 @@ export const topic: Topic = {
 	issues: [
 		{
 			name: "Staple food",
-			weight: 0.9,
+			weight: 9,
 			items: [
 				{
 					name: "Rice",
@@ -26,7 +26,7 @@ export const topic: Topic = {
 		},
 		{
 			name: "Main dish",
-			weight: 0.1,
+			weight: 1,
 			items: [
 				{
 					name: "Steak",

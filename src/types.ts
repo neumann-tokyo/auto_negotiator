@@ -20,6 +20,7 @@ export type Issue = {
 export type NormalizedIssue = {
 	name: string;
 	weight: number;
+	normalizedWeight: number;
 	items: Array<NormalizedItem>;
 };
 

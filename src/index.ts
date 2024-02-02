@@ -3,21 +3,24 @@ import { AtemptType } from "./enums.js";
 import type * as types from "./types.js";
 
 export function normalizeTopic(topic: types.Topic): types.NormalizedTopic {
+	const totalWeight = topic.issues.reduce((t, issue) => t + issue.weight, 0);
 	const newIssues = topic.issues.map((issue) => {
 		const totalEvaluation = issue.items.reduce(
 			(t, item) => t + item.evaluation,
 			0.0,
 		);
+		const normalizedWeight = issue.weight / totalWeight;
 		const newItems = issue.items.map((item) => {
 			return {
 				...item,
 				normalizedEvaluation:
-					(item.evaluation * issue.weight) / totalEvaluation,
+					(item.evaluation * normalizedWeight) / totalEvaluation,
 			};
 		});
 
 		return {
 			...issue,
+			normalizedWeight,
 			items: newItems,
 		};
 	});

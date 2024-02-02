@@ -23,7 +23,7 @@ export const topic: Topic = {
   issues: [
     {
       name: "Staple food",
-      weight: 0.3,
+      weight: 3,
       items: [
         {
           name: "Rice",
@@ -41,7 +41,7 @@ export const topic: Topic = {
     },
     {
       name: "Main dish",
-      weight: 0.7,
+      weight: 7,
       items: [
         {
           name: "Steak",
@@ -62,8 +62,8 @@ export const topic: Topic = {
 ```
 
 This `Topic` has information about dinner. This agent wants to prioritize the
-main dish over the staple food, because the weights are `Staple food: 0.3`,
-`Main dish: 0.7`. In the staple food, the agent want to prioritize rice the most
+main dish over the staple food, because the weights are `Staple food: 3`,
+`Main dish: 7`. In the staple food, the agent want to prioritize rice the most
 among staple foods.
 
 You have to create topics in the same format for each agent.
