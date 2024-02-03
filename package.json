@@ -1,6 +1,6 @@
 {
 	"name": "auto_negotiator",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Auto negotiation by Agent",
 	"main": "src/index.js",
 	"type": "module",
