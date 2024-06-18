@@ -137,7 +137,7 @@ export function negotiate({
 		// TODO 合意できたときの合意した回以降の値はどうするべきか？
 		result.isAgreed = true;
 		result.id = agreedAttempt[0].id;
-		result.attemptsCount = attemptsCount;
+		result.attemptsCount = agreedAttempt[0].id + 1;
 		result.conclusion = agreedAttempt;
 	}
 
