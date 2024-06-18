@@ -12,11 +12,11 @@ export const topic: Topic = {
 			items: [
 				{
 					name: "Rice",
-					evaluation: 1,
+					evaluation: 4,
 				},
 				{
 					name: "Noodles",
-					evaluation: 8,
+					evaluation: 5,
 				},
 				{
 					name: "Bread",

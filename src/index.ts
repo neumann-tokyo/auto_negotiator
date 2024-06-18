@@ -61,34 +61,6 @@ export function defineAgent({
 	);
 }
 
-function checkFinish({
-	attempt,
-	agentsCount,
-}: { attempt: Array<types.Attempt>; agentsCount: number }): {
-	isAgreed: boolean;
-	finish: boolean;
-} {
-	if (attempt.some((status) => status.type === AtemptType.Reject)) {
-		return { isAgreed: false, finish: true };
-	}
-
-	const acceptedStatuses = attempt.filter(
-		(status) => status.type === AtemptType.Accept,
-	);
-	const offeredStatuses = attempt.filter(
-		(status) => status.type === AtemptType.Offer,
-	);
-
-	if (
-		acceptedStatuses.length === agentsCount - 1 &&
-		offeredStatuses.length === 1
-	) {
-		return { isAgreed: true, finish: true };
-	}
-
-	return { isAgreed: false, finish: false };
-}
-
 export function negotiate({
 	channelName,
 	attemptsCount,
@@ -100,7 +72,6 @@ export function negotiate({
 }): types.NegotiateResult {
 	const responseChannelName = `${channelName}-response`;
 	const channel = diagnostics_channel.channel(channelName);
-	let finishFlag = false;
 	const result: types.NegotiateResult = {
 		isAgreed: false,
 		id: 0,
@@ -127,18 +98,6 @@ export function negotiate({
 		}
 
 		attempts[id].push(newAttempt);
-
-		const { isAgreed, finish } = checkFinish({
-			attempt: attempts[id],
-			agentsCount,
-		});
-		if (finish) {
-			finishFlag = true;
-			result.isAgreed = isAgreed;
-			result.id = id;
-			result.attemptsCount = id + 1;
-			result.conclusion = attempts[id];
-		}
 	};
 	diagnostics_channel.subscribe(
 		responseChannelName,
@@ -146,10 +105,6 @@ export function negotiate({
 	);
 
 	for (let i = 0; i < attemptsCount; i++) {
-		if (finishFlag) {
-			break;
-		}
-
 		channel.publish({
 			id: i,
 			attempts: attempts,
@@ -158,14 +113,33 @@ export function negotiate({
 		});
 	}
 
-	if (!finishFlag) {
-		result.isAgreed = false;
-		result.id = attempts.length - 1;
-		result.attemptsCount = attempts.length;
-		result.conclusion = attempts[attempts.length - 1];
-	}
-
 	result.allAttempts = attempts.filter((attempt) => attempt.length !== 0);
+
+	const agreedAttempt = attempts.find((attempt) => {
+		const acceptedStatuses = attempt.filter(
+			(status) => status.type === AtemptType.Accept,
+		);
+		const offeredStatuses = attempt.filter(
+			(status) => status.type === AtemptType.Offer,
+		);
+
+		return (
+			acceptedStatuses.length === agentsCount - 1 &&
+			offeredStatuses.length === 1
+		);
+	});
+	if (agreedAttempt == null) {
+		result.isAgreed = false;
+		result.id = attemptsCount - 1;
+		result.attemptsCount = attemptsCount;
+		result.conclusion = attempts[attemptsCount - 1];
+	} else {
+		// TODO 合意できたときの合意した回以降の値はどうするべきか？
+		result.isAgreed = true;
+		result.id = agreedAttempt[0].id;
+		result.attemptsCount = attemptsCount;
+		result.conclusion = agreedAttempt;
+	}
 
 	return result;
 }

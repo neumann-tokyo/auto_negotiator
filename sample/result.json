@@ -1,17 +1,17 @@
 {
 	"isAgreed": true,
-	"id": 88,
-	"attemptsCount": 89,
+	"id": 80,
+	"attemptsCount": 100,
 	"conclusion": [
 		{
-			"id": 88,
+			"id": 80,
 			"choices": [
 				{
 					"issueName": "Staple food",
 					"item": {
-						"name": "Noodles",
-						"evaluation": 2,
-						"normalizedEvaluation": 0.06
+						"name": "Rice",
+						"evaluation": 7,
+						"normalizedEvaluation": 0.21000000000000002
 					}
 				},
 				{
@@ -23,20 +23,20 @@
 					}
 				}
 			],
-			"concessionValue": 0.12,
-			"utility": 0.017137337601233288,
+			"concessionValue": 0.19999999999999996,
+			"utility": 0.044377009388911176,
 			"type": "offer",
 			"agentName": "linearAgent"
 		},
 		{
-			"id": 88,
+			"id": 80,
 			"choices": [
 				{
 					"issueName": "Staple food",
 					"item": {
-						"name": "Noodles",
-						"evaluation": 8,
-						"normalizedEvaluation": 0.72
+						"name": "Rice",
+						"evaluation": 4,
+						"normalizedEvaluation": 0.36
 					}
 				},
 				{
@@ -48,18 +48,18 @@
 					}
 				}
 			],
-			"concessionValue": 0.41383778448131214,
-			"utility": 0.10150576886884333,
+			"concessionValue": 0.07791012180797519,
+			"utility": 0.06498062089090564,
 			"type": "accept",
 			"agentName": "randomAgent"
 		},
 		{
-			"id": 88,
+			"id": 80,
 			"choices": [
 				{
 					"issueName": "Staple food",
 					"item": {
-						"name": "Noodles",
+						"name": "Rice",
 						"evaluation": 3,
 						"normalizedEvaluation": 0.09
 					}
@@ -73,8 +73,8 @@
 					}
 				}
 			],
-			"concessionValue": 0.061916848035314054,
-			"utility": 0.04877549932658705,
+			"concessionValue": 0.10557280900008414,
+			"utility": 0.05864104812106119,
 			"type": "accept",
 			"agentName": "exponentialAgent"
 		}
@@ -113,8 +113,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -126,8 +126,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.620738856106827,
-				"utility": 0.73,
+				"concessionValue": 0.40967156701837903,
+				"utility": 0.46,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -190,21 +190,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.23935558476436403,
-				"utility": 0.7133831712977418,
+				"concessionValue": 0.9080996427603958,
+				"utility": 0.4886186104779054,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -266,22 +266,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.19730584295581188,
-				"utility": 0.7257943653762913,
+				"concessionValue": 0.29403208148831306,
+				"utility": 0.3533472568279313,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -344,8 +344,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -357,8 +357,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.6502573798091227,
-				"utility": 0.7092732686057132,
+				"concessionValue": 0.17529720741056254,
+				"utility": 0.45729460739052563,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -420,9 +420,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.09
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -434,8 +434,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.03873196780519139,
-				"utility": 0.12768151750982737,
+				"concessionValue": 0.9586518527195838,
+				"utility": 0.4560054196779549,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -498,8 +498,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -511,8 +511,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.786370079141214,
-				"utility": 0.6862632223629841,
+				"concessionValue": 0.5980727272405135,
+				"utility": 0.4456254690668728,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -574,23 +574,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.4019046786787124,
-				"utility": 0.6619323283666212,
-				"type": "offer",
+				"concessionValue": 0.12321526726723109,
+				"utility": 0.3222565282837498,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -652,8 +652,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -665,8 +665,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9693904333616536,
-				"utility": 0.6553762894158298,
+				"concessionValue": 0.4984456378348341,
+				"utility": 0.4255690191011883,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -729,8 +729,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -742,8 +742,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.4895736609832593,
-				"utility": 0.6404581037490567,
+				"concessionValue": 0.2180739310121309,
+				"utility": 0.41588188555133554,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -806,21 +806,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.6730274909955112,
-				"utility": 0.5933662767997924,
+				"concessionValue": 0.8471940479685665,
+				"utility": 0.4064152580820496,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -883,21 +883,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.5405960031925898,
-				"utility": 0.603689458390454,
+				"concessionValue": 0.879785606732383,
+				"utility": 0.3971641173621408,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -960,8 +960,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -973,8 +973,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.5588127017431499,
-				"utility": 0.5977102798040926,
+				"concessionValue": 0.7534876494588247,
+				"utility": 0.3881235583143459,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1036,22 +1036,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.6098784134324242,
-				"utility": 0.5765189570221797,
+				"concessionValue": 0.36552770887562036,
+				"utility": 0.280673702760798,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1113,22 +1113,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.09
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.09345201066144226,
-				"utility": 0.07413102413009176,
+				"concessionValue": 0.49549907230778256,
+				"utility": 0.3706551206504588,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1191,21 +1191,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.4909957885139451,
-				"utility": 0.5505713296569924,
+				"concessionValue": 0.776889899330832,
+				"utility": 0.36221798003749506,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1268,8 +1268,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1281,8 +1281,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.48649228585654525,
-				"utility": 0.5451182539757862,
+				"concessionValue": 0.40910155872777443,
+				"utility": 0.35397289219206896,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1344,9 +1344,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
@@ -1358,9 +1358,9 @@
 						}
 					}
 				],
-				"concessionValue": 0.4909982757275799,
-				"utility": 0.5050366087708237,
-				"type": "offer",
+				"concessionValue": 0.07974449150536267,
+				"utility": 0.25597745924000653,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -1422,21 +1422,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.5878334840457546,
-				"utility": 0.49354057203614665,
+				"concessionValue": 0.4701280090490578,
+				"utility": 0.331280657942071,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1499,21 +1499,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.7291692282204572,
-				"utility": 0.4823062170455451,
+				"concessionValue": 0.1222607905248354,
+				"utility": 0.33034672400379805,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1576,8 +1576,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1589,8 +1589,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.53452287629597,
-				"utility": 0.49069721406633815,
+				"concessionValue": 0.4378176452779283,
+				"utility": 0.3163705722269812,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1652,9 +1652,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.09
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1666,8 +1666,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.12133763250542695,
-				"utility": 0.08202445478242512,
+				"concessionValue": 0.01751090717745374,
+				"utility": 0.3091690987952947,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1730,21 +1730,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.535522879667212,
-				"utility": 0.45011435135888195,
+				"concessionValue": 0.8120169886214419,
+				"utility": 0.3082975009307411,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1807,8 +1807,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1820,8 +1820,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.625494042736843,
-				"utility": 0.4639708812772555,
+				"concessionValue": 0.9784147268112715,
+				"utility": 0.30127979303717894,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1884,8 +1884,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1897,8 +1897,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.8921599870927259,
-				"utility": 0.4534096146238034,
+				"concessionValue": 0.9501872259593056,
+				"utility": 0.29442182767779446,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -1961,8 +1961,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -1974,8 +1974,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.7682851553975107,
-				"utility": 0.4430887517496108,
+				"concessionValue": 0.21913501640481892,
+				"utility": 0.28771996866857846,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2038,21 +2038,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.7948917731416008,
-				"utility": 0.43300282039656873,
+				"concessionValue": 0.3514664800993823,
+				"utility": 0.2755472493432711,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2115,21 +2115,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.65907805261434,
-				"utility": 0.4011648379160659,
+				"concessionValue": 0.1211354562615492,
+				"utility": 0.269275028190236,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2192,8 +2192,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -2205,8 +2205,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.6789673825953735,
-				"utility": 0.40814416524139197,
+				"concessionValue": 0.48209080026944484,
+				"utility": 0.2631455802214238,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2269,21 +2269,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.39977643816591146,
-				"utility": 0.3988536697898271,
+				"concessionValue": 0.5690512847936375,
+				"utility": 0.26240373012488627,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2346,8 +2346,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -2359,8 +2359,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9346548418384033,
-				"utility": 0.394903265673351,
+				"concessionValue": 0.4970713621555034,
+				"utility": 0.25643069199568247,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2423,8 +2423,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -2436,8 +2436,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.8402138961041676,
-				"utility": 0.3859141698929997,
+				"concessionValue": 0.8640923881385592,
+				"utility": 0.2505936168136362,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2500,21 +2500,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.15163001885490157,
-				"utility": 0.3722319027200191,
+				"concessionValue": 0.5253374723301734,
+				"utility": 0.2448894096842231,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2576,9 +2576,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
@@ -2590,8 +2590,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9637296707475147,
-				"utility": 0.36854517108843154,
+				"concessionValue": 0.048773512040454214,
+				"utility": 0.19623833785228173,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2654,21 +2654,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.34865421448018896,
-				"utility": 0.3554787073782706,
+				"concessionValue": 0.9299496828793905,
+				"utility": 0.2338675706435991,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2731,8 +2731,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -2744,8 +2744,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9383750406985152,
-				"utility": 0.3519579060034537,
+				"concessionValue": 0.6805972243766405,
+				"utility": 0.2285440948074375,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2808,8 +2808,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -2821,8 +2821,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.5581248047205143,
-				"utility": 0.3439463659562416,
+				"concessionValue": 0.5379001016951928,
+				"utility": 0.22334179607548157,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2885,21 +2885,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.6751615369847572,
-				"utility": 0.3361171908249278,
+				"concessionValue": 0.4528241771625454,
+				"utility": 0.20079728283047638,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -2961,22 +2961,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.26411362506797076,
-				"utility": 0.3242004342892104,
+				"concessionValue": 0.26390202273526975,
+				"utility": 0.15783442195658928,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3013,9 +3013,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -3028,7 +3028,7 @@
 					}
 				],
 				"concessionValue": 0.62,
-				"utility": 0.25845901775160796,
+				"utility": 0.32098942527215824,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3039,21 +3039,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.6705027943595578,
-				"utility": 0.30431464993334484,
+				"concessionValue": 0.5608226398808425,
+				"utility": 0.2084346917351677,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3116,22 +3116,22 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.05342956032037405,
-				"utility": 0.3096090111311257,
-				"type": "offer",
+				"concessionValue": 0.3783689765277798,
+				"utility": 0.18739492778989186,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -3193,21 +3193,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.31643913624268216,
-				"utility": 0.30654252132619286,
+				"concessionValue": 0.3760944776965056,
+				"utility": 0.19507251357121363,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3217,7 +3217,7 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
+							"name": "Rice",
 							"evaluation": 3,
 							"normalizedEvaluation": 0.09
 						}
@@ -3244,9 +3244,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -3259,7 +3259,7 @@
 					}
 				],
 				"concessionValue": 0.5900000000000001,
-				"utility": 0.24120798989645398,
+				"utility": 0.22953663554662554,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3270,21 +3270,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.11016038558029995,
-				"utility": 0.29567431019565327,
+				"concessionValue": 0.4188595104133863,
+				"utility": 0.1945225724971403,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3294,9 +3294,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
@@ -3309,7 +3309,7 @@
 					}
 				],
 				"concessionValue": 0.3596875762567151,
-				"utility": 0.1439467036478838,
+				"utility": 0.15561805799771222,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -3321,9 +3321,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -3336,7 +3336,7 @@
 					}
 				],
 				"concessionValue": 0.5800000000000001,
-				"utility": 0.23571742571874793,
+				"utility": 0.22431174382913108,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3346,22 +3346,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.8468839376865538,
-				"utility": 0.2927458351668321,
+				"concessionValue": 0.16395904345999868,
+				"utility": 0.14067007663860762,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3371,9 +3371,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
@@ -3386,7 +3386,7 @@
 					}
 				],
 				"concessionValue": 0.35192593015921403,
-				"utility": 0.14067007663860764,
+				"utility": 0.15207575852822447,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -3398,9 +3398,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -3413,7 +3413,7 @@
 					}
 				],
 				"concessionValue": 0.5700000000000001,
-				"utility": 0.23035184204024692,
+				"utility": 0.2860821264048228,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3423,22 +3423,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.6807472761198832,
-				"utility": 0.28608212640482283,
+				"concessionValue": 0.35393463508272327,
+				"utility": 0.148614091638869,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3475,9 +3475,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.03
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
 						}
 					},
 					{
@@ -3490,7 +3490,7 @@
 					}
 				],
 				"concessionValue": 0.56,
-				"utility": 0.21421605231435978,
+				"utility": 0.22510839395746282,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3501,8 +3501,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -3514,167 +3514,13 @@
 						}
 					}
 				],
-				"concessionValue": 0.2965270299351004,
-				"utility": 0.27957010217297806,
+				"concessionValue": 0.6745080822054181,
+				"utility": 0.18153902738505068,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
 				"id": 44,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
-						}
-					}
-				],
-				"concessionValue": 0.33667504192892006,
-				"utility": 0.14523122190804053,
-				"type": "offer",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 45,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.03
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.55,
-				"utility": 0.2093398996478095,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 45,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.3003019622241616,
-				"utility": 0.2590137741405101,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 45,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
-						}
-					}
-				],
-				"concessionValue": 0.3291796067500631,
-				"utility": 0.14192535569343018,
-				"type": "offer",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 46,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Rice",
-							"evaluation": 7,
-							"normalizedEvaluation": 0.21000000000000002
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.54,
-				"utility": 0.2669873748484493,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 46,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
-						}
-					}
-				],
-				"concessionValue": 0.7701253272630431,
-				"utility": 0.2669873748484493,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 46,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -3693,15 +3539,15 @@
 						}
 					}
 				],
-				"concessionValue": 0.3217670016874732,
-				"utility": 0.12829263466743668,
-				"type": "accept",
+				"concessionValue": 0.33667504192892006,
+				"utility": 0.13433888026493748,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 47,
+				"id": 45,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -3720,20 +3566,97 @@
 						}
 					}
 				],
-				"concessionValue": 0.53,
-				"utility": 0.2100833768063056,
+				"concessionValue": 0.55,
+				"utility": 0.21998430132481678,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
 			{
-				"id": 47,
+				"id": 45,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.6737424726724799,
+				"utility": 0.17740669461678774,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 45,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.3291796067500631,
+				"utility": 0.13128095401642292,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 46,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
 							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.54,
+				"utility": 0.2149768472805696,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 46,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -3745,8 +3668,85 @@
 						}
 					}
 				],
-				"concessionValue": 0.58668683569327,
-				"utility": 0.2473562339816179,
+				"concessionValue": 0.03147165465210411,
+				"utility": 0.15949895120816454,
+				"type": "accept",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 46,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.3217670016874732,
+				"utility": 0.13869474018101263,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 47,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.53,
+				"utility": 0.1999180521221295,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 47,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
+						}
+					}
+				],
+				"concessionValue": 0.4468540112962305,
+				"utility": 0.1660336365082093,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3783,9 +3783,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 7,
-							"normalizedEvaluation": 0.21000000000000002
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -3798,7 +3798,7 @@
 					}
 				],
 				"concessionValue": 0.52,
-				"utility": 0.25497096354159515,
+				"utility": 0.19536736167472873,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -3809,21 +3809,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.42791303099051703,
-				"utility": 0.2417257186822915,
+				"concessionValue": 0.4653034385625918,
+				"utility": 0.16225424952646963,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3833,9 +3833,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
@@ -3848,7 +3848,7 @@
 					}
 				],
 				"concessionValue": 0.3071796769724491,
-				"utility": 0.1225185149485587,
+				"utility": 0.13245244859303643,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -3886,8 +3886,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -3899,8 +3899,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.8164271757847126,
-				"utility": 0.24916711583581375,
+				"concessionValue": 0.5812585941520849,
+				"utility": 0.16179682846481414,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -3963,8 +3963,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -3976,8 +3976,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.21895152915041916,
-				"utility": 0.2434953798329652,
+				"concessionValue": 0.5531160093958472,
+				"utility": 0.15811388300841897,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4014,9 +4014,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -4029,7 +4029,7 @@
 					}
 				],
 				"concessionValue": 0.49,
-				"utility": 0.1915983168158426,
+				"utility": 0.18232743051830183,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -4040,8 +4040,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -4053,8 +4053,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9345175222190072,
-				"utility": 0.23795274830354646,
+				"concessionValue": 0.3910706109343338,
+				"utility": 0.15451477162567953,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4091,83 +4091,6 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.48,
-				"utility": 0.187237006664925,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 52,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
-						}
-					}
-				],
-				"concessionValue": 0.6651486677170617,
-				"utility": 0.2325362824709552,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 52,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
-						}
-					}
-				],
-				"concessionValue": 0.2788897449072021,
-				"utility": 0.11173821365487457,
-				"type": "accept",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 53,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
 							"name": "Bread",
 							"evaluation": 1,
 							"normalizedEvaluation": 0.03
@@ -4182,20 +4105,20 @@
 						}
 					}
 				],
-				"concessionValue": 0.47,
-				"utility": 0.17412134437331672,
+				"concessionValue": 0.48,
+				"utility": 0.17817715150371893,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
 			{
-				"id": 53,
+				"id": 52,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
@@ -4207,40 +4130,40 @@
 						}
 					}
 				],
-				"concessionValue": 0.7868666401042614,
-				"utility": 0.2272431104533117,
+				"concessionValue": 0.11021734674841355,
+				"utility": 0.12381802053648265,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
-				"id": 53,
+				"id": 52,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
-				"concessionValue": 0.2719890110719482,
-				"utility": 0.10919474138665626,
+				"concessionValue": 0.2788897449072021,
+				"utility": 0.09965840677326651,
 				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 54,
+				"id": 53,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -4259,38 +4182,38 @@
 						}
 					}
 				],
-				"concessionValue": 0.45999999999999996,
-				"utility": 0.22207042574074864,
+				"concessionValue": 0.47,
+				"utility": 0.2272431104533117,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
 			{
-				"id": 54,
+				"id": 53,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.45136780330205295,
-				"utility": 0.22207042574074862,
+				"concessionValue": 0.16723737328771593,
+				"utility": 0.1446092521066529,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
-				"id": 54,
+				"id": 53,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -4303,21 +4226,21 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Fish",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
-				"concessionValue": 0.26515307716504655,
-				"utility": 0.1067091656156844,
-				"type": "accept",
+				"concessionValue": 0.2719890110719482,
+				"utility": 0.08853627679999157,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 55,
+				"id": 54,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -4336,38 +4259,38 @@
 						}
 					}
 				],
-				"concessionValue": 0.44999999999999996,
-				"utility": 0.16628459294460274,
+				"concessionValue": 0.45999999999999996,
+				"utility": 0.17015785868446973,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
 			{
-				"id": 55,
+				"id": 54,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.5830241292722966,
-				"utility": 0.20574195398230513,
+				"concessionValue": 0.18290641124540263,
+				"utility": 0.14131754365320368,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
-				"id": 55,
+				"id": 54,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -4380,6 +4303,83 @@
 					{
 						"issueName": "Main dish",
 						"item": {
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.26515307716504655,
+				"utility": 0.09517303960317797,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 55,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.44999999999999996,
+				"utility": 0.2170154857073629,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 55,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.5607781753124412,
+				"utility": 0.14091914656322269,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 55,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
 							"name": "Steak",
 							"evaluation": 4,
 							"normalizedEvaluation": 0.27999999999999997
@@ -4387,8 +4387,8 @@
 					}
 				],
 				"concessionValue": 0.2583801512904337,
-				"utility": 0.11273531725057813,
-				"type": "offer",
+				"utility": 0.10428016845678477,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4425,21 +4425,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.49863451039352524,
-				"utility": 0.20105869534368612,
+				"concessionValue": 0.4894134206620915,
+				"utility": 0.13495720646357015,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4457,15 +4457,15 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
 						}
 					}
 				],
 				"concessionValue": 0.25166852264521167,
-				"utility": 0.09088954721015949,
-				"type": "accept",
+				"utility": 0.11016914813352664,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4502,21 +4502,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.4728900115022452,
-				"utility": 0.19648204068666486,
+				"concessionValue": 0.4186323379108705,
+				"utility": 0.13188520539241888,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4526,9 +4526,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
@@ -4541,7 +4541,7 @@
 					}
 				],
 				"concessionValue": 0.24501655647292508,
-				"utility": 0.08882064852958821,
+				"utility": 0.08074604411780748,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -4553,9 +4553,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -4568,7 +4568,7 @@
 					}
 				],
 				"concessionValue": 0.42000000000000004,
-				"utility": 0.16307661549751368,
+				"utility": 0.2025306353759444,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -4579,21 +4579,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.41626331978225184,
-				"utility": 0.19990036738404904,
+				"concessionValue": 0.6207174492019987,
+				"utility": 0.1315133995947691,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4603,9 +4603,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
@@ -4618,8 +4618,8 @@
 					}
 				],
 				"concessionValue": 0.23842268941360922,
-				"utility": 0.10521071967581527,
-				"type": "offer",
+				"utility": 0.09731991570012913,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4655,22 +4655,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.7745999869552993,
-				"utility": 0.19792047527320253,
+				"concessionValue": 0.013657813223830084,
+				"utility": 0.03341514517599523,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4688,15 +4688,15 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
 				"concessionValue": 0.23188542521313915,
-				"utility": 0.10281583131075456,
-				"type": "offer",
+				"utility": 0.0848230608313725,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4707,9 +4707,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 7,
-							"normalizedEvaluation": 0.21000000000000002
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
 						}
 					},
 					{
@@ -4722,7 +4722,7 @@
 					}
 				],
 				"concessionValue": 0.4,
-				"utility": 0.19341525522623765,
+				"utility": 0.15573695875359395,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -4733,22 +4733,22 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.17362793224820527,
-				"utility": 0.19341525522623768,
-				"type": "offer",
+				"concessionValue": 0.11806933476541759,
+				"utility": 0.11554677584944069,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -4765,15 +4765,15 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
 				"concessionValue": 0.2254033307585166,
-				"utility": 0.09293979796585446,
-				"type": "accept",
+				"utility": 0.07535659294528739,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4810,21 +4810,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.2812904509966707,
-				"utility": 0.1865578775920623,
+				"concessionValue": 0.8565252444031906,
+				"utility": 0.12273544578425152,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4834,23 +4834,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
 				"concessionValue": 0.21897503240933458,
-				"utility": 0.09082422988034612,
-				"type": "offer",
+				"utility": 0.081005394217606,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4887,8 +4887,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -4900,8 +4900,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.29119383488048123,
-				"utility": 0.18471013476450077,
+				"concessionValue": 0.7296958963351026,
+				"utility": 0.11994164595097455,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4911,9 +4911,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
@@ -4926,8 +4926,8 @@
 					}
 				],
 				"concessionValue": 0.21259921259881887,
-				"utility": 0.08875681800372115,
-				"type": "accept",
+				"utility": 0.09595331676077962,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -4963,22 +4963,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.42241424304721753,
-				"utility": 0.180505618779634,
+				"concessionValue": 0.067696248015783,
+				"utility": 0.023442288153199223,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -4988,7 +4988,7 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
+							"name": "Noodles",
 							"evaluation": 3,
 							"normalizedEvaluation": 0.09
 						}
@@ -5015,9 +5015,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -5030,7 +5030,7 @@
 					}
 				],
 				"concessionValue": 0.36,
-				"utility": 0.14203379447160192,
+				"utility": 0.17639680926311851,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5041,8 +5041,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -5054,8 +5054,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.8789942489789824,
-				"utility": 0.17639680926311851,
+				"concessionValue": 0.46397289143475784,
+				"utility": 0.11454338263838865,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5065,9 +5065,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
@@ -5080,8 +5080,8 @@
 					}
 				],
 				"concessionValue": 0.19999999999999996,
-				"utility": 0.09163470611071092,
-				"type": "offer",
+				"utility": 0.08476210315240759,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -5092,9 +5092,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -5107,7 +5107,7 @@
 					}
 				],
 				"concessionValue": 0.35,
-				"utility": 0.13880071059123705,
+				"utility": 0.13208454717553203,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5118,21 +5118,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.7482512211187495,
-				"utility": 0.17238152766976214,
+				"concessionValue": 0.38878739780030136,
+				"utility": 0.10298117237414361,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5158,7 +5158,7 @@
 				],
 				"concessionValue": 0.19377422517014498,
 				"utility": 0.08283268212702856,
-				"type": "accept",
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -5195,21 +5195,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.6821128539473413,
-				"utility": 0.16845764504411553,
+				"concessionValue": 0.44985994296807674,
+				"utility": 0.10720031957352806,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5235,90 +5235,13 @@
 				],
 				"concessionValue": 0.18759615953640396,
 				"utility": 0.08094718008613343,
-				"type": "accept",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 67,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.32999999999999996,
-				"utility": 0.13255364954913837,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 67,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.5735573723712031,
-				"utility": 0.15607123253366292,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 67,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
-						}
-					}
-				],
-				"concessionValue": 0.18146472281275494,
-				"utility": 0.07910459731158258,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 68,
+				"id": 67,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -5337,8 +5260,85 @@
 						}
 					}
 				],
+				"concessionValue": 0.32999999999999996,
+				"utility": 0.16462308089167185,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 67,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
+						}
+					}
+				],
+				"concessionValue": 0.31010781274173715,
+				"utility": 0.09834625611710267,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 67,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.18146472281275494,
+				"utility": 0.06413886268506695,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 68,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
 				"concessionValue": 0.31999999999999995,
-				"utility": 0.16087580207576102,
+				"utility": 0.12326847172038831,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5349,21 +5349,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.4969498523689424,
-				"utility": 0.15878650594490698,
+				"concessionValue": 0.71243711863982,
+				"utility": 0.10446480654270197,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5381,15 +5381,15 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
 						}
 					}
 				],
 				"concessionValue": 0.17537887487646786,
-				"utility": 0.06267888392562117,
-				"type": "offer",
+				"utility": 0.07730395684159945,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -5425,22 +5425,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 5,
-							"normalizedEvaluation": 0.05
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.9928743782439426,
-				"utility": 0.15721382173955378,
+				"concessionValue": 0.039744171682860374,
+				"utility": 0.07554430395277259,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5450,7 +5450,7 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
+							"name": "Rice",
 							"evaluation": 3,
 							"normalizedEvaluation": 0.09
 						}
@@ -5466,7 +5466,7 @@
 				],
 				"concessionValue": 0.16933761370819256,
 				"utility": 0.07554430395277259,
-				"type": "accept",
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -5477,9 +5477,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -5492,7 +5492,7 @@
 					}
 				],
 				"concessionValue": 0.30000000000000004,
-				"utility": 0.12370626352807053,
+				"utility": 0.1177204765831639,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5503,8 +5503,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -5516,8 +5516,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.3048010805409682,
-				"utility": 0.15363519825260374,
+				"concessionValue": 0.8168490895068099,
+				"utility": 0.09976311574844399,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5580,103 +5580,26 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.4747489382429333,
-				"utility": 0.14818818958161145,
+				"concessionValue": 0.6003747578948817,
+				"utility": 0.09749222998790229,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
 				"id": 71,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Rice",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Fish",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
-						}
-					}
-				],
-				"concessionValue": 0.1573850226823642,
-				"utility": 0.058495337992741356,
-				"type": "offer",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 72,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Rice",
-							"evaluation": 7,
-							"normalizedEvaluation": 0.21000000000000002
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.28,
-				"utility": 0.14672047528317003,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 72,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.6468706580532517,
-				"utility": 0.13909863241131704,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 72,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -5695,8 +5618,85 @@
 						}
 					}
 				],
+				"concessionValue": 0.1573850226823642,
+				"utility": 0.07214425019104767,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 72,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.28,
+				"utility": 0.05335290010297093,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 72,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.1456489244661492,
+				"utility": 0.09527303589816237,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 72,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
 				"concessionValue": 0.15147186257614298,
-				"utility": 0.07050204656464014,
+				"utility": 0.07621842871852988,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -5708,9 +5708,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -5723,7 +5723,7 @@
 					}
 				],
 				"concessionValue": 0.27,
-				"utility": 0.11544940247309779,
+				"utility": 0.1098631410631092,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5734,8 +5734,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -5747,8 +5747,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.7675939129199334,
-				"utility": 0.1433807095230408,
+				"concessionValue": 0.9875355400033512,
+				"utility": 0.09310435683314339,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5774,7 +5774,7 @@
 				],
 				"concessionValue": 0.1455996254682469,
 				"utility": 0.0688972240565261,
-				"type": "accept",
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -5785,9 +5785,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -5800,7 +5800,7 @@
 					}
 				],
 				"concessionValue": 0.26,
-				"utility": 0.11282145323381898,
+				"utility": 0.14011696611296873,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5811,8 +5811,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -5824,8 +5824,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.22710269430608876,
-				"utility": 0.14011696611296873,
+				"concessionValue": 0.9478367748598719,
+				"utility": 0.0909850429304992,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5851,90 +5851,13 @@
 				],
 				"concessionValue": 0.13976747329573735,
 				"utility": 0.06732893176856938,
-				"type": "accept",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 75,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.25,
-				"utility": 0.1102533234224132,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 75,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.6752707489285417,
-				"utility": 0.12981439693284136,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 75,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
-						}
-					}
-				],
-				"concessionValue": 0.1339745962155614,
-				"utility": 0.0711311764015569,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 76,
+				"id": 75,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -5953,8 +5876,85 @@
 						}
 					}
 				],
+				"concessionValue": 0.25,
+				"utility": 0.10491848519229643,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 75,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.7636953449136898,
+				"utility": 0.08891397050194616,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 75,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.1339745962155614,
+				"utility": 0.06579633817144014,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 76,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
 				"concessionValue": 0.24,
-				"utility": 0.10253024889621316,
+				"utility": 0.04865842320498252,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -5965,21 +5965,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.3338649664709752,
-				"utility": 0.12685946049870442,
+				"concessionValue": 0.9611529013642939,
+				"utility": 0.08689004143746878,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -5989,22 +5989,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
 						}
 					}
 				],
 				"concessionValue": 0.12822021129186534,
-				"utility": 0.057347427348729385,
+				"utility": 0.0642986306637269,
 				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
@@ -6042,8 +6042,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -6055,8 +6055,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.9198203557492328,
-				"utility": 0.13076476123955433,
+				"concessionValue": 0.22355727489605792,
+				"utility": 0.08491218262308722,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6082,7 +6082,7 @@
 				],
 				"concessionValue": 0.12250356126078776,
 				"utility": 0.06283501514108454,
-				"type": "offer",
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -6093,22 +6093,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
+							"name": "Steak",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
 						}
 					}
 				],
 				"concessionValue": 0.21999999999999997,
-				"utility": 0.10289438826112876,
+				"utility": 0.0464684334082517,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -6119,85 +6119,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.22782405999474986,
-				"utility": 0.12114984424294194,
-				"type": "offer",
-				"agentName": "randomAgent"
-			},
-			{
-				"id": 78,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Fish",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
-						}
-					}
-				],
-				"concessionValue": 0.11682391336721532,
-				"utility": 0.0547663679454395,
-				"type": "offer",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 79,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.20999999999999996,
-				"utility": 0.10055222603625365,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 79,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -6209,8 +6132,85 @@
 						}
 					}
 				],
-				"concessionValue": 0.7851470804771514,
-				"utility": 0.1248793774966376,
+				"concessionValue": 0.8365205299250846,
+				"utility": 0.08297934537187804,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 78,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.11682391336721532,
+				"utility": 0.06140471557518975,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 79,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.20999999999999996,
+				"utility": 0.04541068272605004,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 79,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.03216710993028671,
+				"utility": 0.0810905048679465,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6220,9 +6220,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
@@ -6235,8 +6235,8 @@
 					}
 				],
 				"concessionValue": 0.11118055826844109,
-				"utility": 0.0648724038943572,
-				"type": "offer",
+				"utility": 0.060006973602280404,
+				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -6272,23 +6272,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.37633662626638453,
-				"utility": 0.12045188262704462,
-				"type": "offer",
+				"concessionValue": 0.07791012180797519,
+				"utility": 0.06498062089090564,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -6349,23 +6349,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.09
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
 						}
 					}
 				],
-				"concessionValue": 0.0455157627331495,
-				"utility": 0.02013461604586226,
-				"type": "offer",
+				"concessionValue": 0.11139175973941984,
+				"utility": 0.05730621489976181,
+				"type": "accept",
 				"agentName": "randomAgent"
 			},
 			{
@@ -6374,23 +6374,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.20999999999999996
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
 						}
 					}
 				],
 				"concessionValue": 0.09999999999999998,
-				"utility": 0.051110948424111874,
-				"type": "accept",
+				"utility": 0.05730621489976181,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -6401,9 +6401,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
 						}
 					},
 					{
@@ -6416,7 +6416,7 @@
 					}
 				],
 				"concessionValue": 0.18000000000000005,
-				"utility": 0.09384079740304492,
+				"utility": 0.0893001136577363,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -6427,8 +6427,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -6440,8 +6440,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.5941524066842494,
-				"utility": 0.11654421612958804,
+				"concessionValue": 0.32560863232948156,
+				"utility": 0.07567806242181044,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6451,9 +6451,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.12
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
 						}
 					},
 					{
@@ -6466,7 +6466,7 @@
 					}
 				],
 				"concessionValue": 0.09446148618625838,
-				"utility": 0.06054244993744834,
+				"utility": 0.056001766192139715,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
@@ -6486,7 +6486,7 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
+							"name": "Fish",
 							"evaluation": 1,
 							"normalizedEvaluation": 0.06999999999999999
 						}
@@ -6503,22 +6503,22 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
 						}
 					}
 				],
-				"concessionValue": 0.527844034865002,
-				"utility": 0.10797491233627916,
+				"concessionValue": 0.3746538120333023,
+				"utility": 0.059164335526728305,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6528,23 +6528,23 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"name": "Fish",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
 						}
 					}
 				],
 				"concessionValue": 0.08895664208557008,
-				"utility": 0.054727010362223674,
-				"type": "accept",
+				"utility": 0.04881057680955085,
+				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
@@ -6555,9 +6555,9 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Noodles",
-							"evaluation": 2,
-							"normalizedEvaluation": 0.06
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
@@ -6570,7 +6570,7 @@
 					}
 				],
 				"concessionValue": 0.16000000000000003,
-				"utility": 0.0896172657862475,
+				"utility": 0.11129886234743641,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
@@ -6581,8 +6581,8 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -6594,8 +6594,8 @@
 						}
 					}
 				],
-				"concessionValue": 0.8922921972583224,
-				"utility": 0.11129886234743643,
+				"concessionValue": 0.7938566521529291,
+				"utility": 0.07227198853729638,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6640,7 +6640,7 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
+							"name": "Fish",
 							"evaluation": 1,
 							"normalizedEvaluation": 0.06999999999999999
 						}
@@ -6658,21 +6658,21 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.4762254327796578,
-				"utility": 0.10735285339132934,
+				"concessionValue": 0.9149006988780135,
+				"utility": 0.07062687723113772,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
@@ -6682,7 +6682,7 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Rice",
+							"name": "Noodles",
 							"evaluation": 3,
 							"normalizedEvaluation": 0.09
 						}
@@ -6709,49 +6709,24 @@
 					{
 						"issueName": "Staple food",
 						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.03
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.14,
-				"utility": 0.0814426716115702,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 86,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
 							"name": "Fish",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.04
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
 						}
 					}
 				],
-				"concessionValue": 0.035015348523218304,
-				"utility": 0.10490920410981924,
+				"concessionValue": 0.14,
+				"utility": 0.03865075940888078,
 				"type": "offer",
-				"agentName": "randomAgent"
+				"agentName": "linearAgent"
 			},
 			{
 				"id": 86,
@@ -6760,78 +6735,26 @@
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 3,
-							"normalizedEvaluation": 0.09
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
 						"issueName": "Main dish",
 						"item": {
 							"name": "Steak",
-							"evaluation": 4,
-							"normalizedEvaluation": 0.27999999999999997
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
 						}
 					}
 				],
-				"concessionValue": 0.07263815045042965,
-				"utility": 0.05107421779030674,
-				"type": "offer",
-				"agentName": "exponentialAgent"
-			}
-		],
-		[
-			{
-				"id": 87,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Bread",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.03
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.5599999999999999
-						}
-					}
-				],
-				"concessionValue": 0.13,
-				"utility": 0.07958881007290755,
-				"type": "offer",
-				"agentName": "linearAgent"
-			},
-			{
-				"id": 87,
-				"choices": [
-					{
-						"issueName": "Staple food",
-						"item": {
-							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
-						}
-					},
-					{
-						"issueName": "Main dish",
-						"item": {
-							"name": "Chicken",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.01
-						}
-					}
-				],
-				"concessionValue": 0.003970519948206297,
-				"utility": 0.0984742904291907,
+				"concessionValue": 0.8828809857154691,
+				"utility": 0.06901921323014425,
 				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
-				"id": 87,
+				"id": 86,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -6850,15 +6773,15 @@
 						}
 					}
 				],
-				"concessionValue": 0.06726209469111855,
-				"utility": 0.05395851530366614,
+				"concessionValue": 0.07263815045042965,
+				"utility": 0.055215370584115395,
 				"type": "offer",
 				"agentName": "exponentialAgent"
 			}
 		],
 		[
 			{
-				"id": 88,
+				"id": 87,
 				"choices": [
 					{
 						"issueName": "Staple food",
@@ -6871,26 +6794,26 @@
 					{
 						"issueName": "Main dish",
 						"item": {
-							"name": "Steak",
-							"evaluation": 1,
-							"normalizedEvaluation": 0.06999999999999999
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
 						}
 					}
 				],
-				"concessionValue": 0.12,
-				"utility": 0.017137337601233288,
+				"concessionValue": 0.13,
+				"utility": 0.08363569872068252,
 				"type": "offer",
 				"agentName": "linearAgent"
 			},
 			{
-				"id": 88,
+				"id": 87,
 				"choices": [
 					{
 						"issueName": "Staple food",
 						"item": {
 							"name": "Noodles",
-							"evaluation": 8,
-							"normalizedEvaluation": 0.72
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
 						}
 					},
 					{
@@ -6902,9 +6825,86 @@
 						}
 					}
 				],
-				"concessionValue": 0.41383778448131214,
-				"utility": 0.10150576886884333,
+				"concessionValue": 0.037526774467986135,
+				"utility": 0.06744814412958268,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 87,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.06726209469111855,
+				"utility": 0.049911626655891175,
 				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 88,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.12,
+				"utility": 0.077777147574828,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 88,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
+						}
+					}
+				],
+				"concessionValue": 0.27322130493960994,
+				"utility": 0.06063980997359472,
+				"type": "offer",
 				"agentName": "randomAgent"
 			},
 			{
@@ -6929,6 +6929,853 @@
 				],
 				"concessionValue": 0.061916848035314054,
 				"utility": 0.04877549932658705,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 89,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.10999999999999999,
+				"utility": 0.03607098744740775,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 89,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.5347334139087339,
+				"utility": 0.0644124775846567,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 89,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.05660188679433964,
+				"utility": 0.047665233412645946,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 90,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.09999999999999998,
+				"utility": 0.016366030353324172,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 90,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
+						}
+					}
+				],
+				"concessionValue": 0.06792903268025352,
+				"utility": 0.0616873451779142,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 90,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.05131670194948623,
+				"utility": 0.041544538589207515,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 91,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.08999999999999997,
+				"utility": 0.0725858574779305,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 91,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.04
+						}
+					}
+				],
+				"concessionValue": 0.2525085432836205,
+				"utility": 0.04921075083249525,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 91,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.04606079858305434,
+				"utility": 0.04921075083249525,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 92,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.07999999999999996,
+				"utility": 0.07093360164242735,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 92,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
+						}
+					}
+				],
+				"concessionValue": 0.06038371014789212,
+				"utility": 0.05530416399240099,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 92,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.040833695337456066,
+				"utility": 0.03967472634237462,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 93,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.06999999999999995,
+				"utility": 0.011748975549395295,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 93,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.6414530862750483,
+				"utility": 0.05874487774697648,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 93,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.03563492390070444,
+				"utility": 0.04699590219758118,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 94,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.06000000000000005,
+				"utility": 0.014925997079459477,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 94,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.7114904767011507,
+				"utility": 0.057407681074844154,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 94,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.030464028516734243,
+				"utility": 0.04248168399538466,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 95,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.050000000000000044,
+				"utility": 0.06619908880381585,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 95,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.5141726186526752,
+				"utility": 0.05610092271509818,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 95,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.025320565519103666,
+				"utility": 0.03702660899196479,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 96,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 7,
+							"normalizedEvaluation": 0.21000000000000002
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.040000000000000036,
+				"utility": 0.08442882110302526,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 96,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.36
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.01
+						}
+					}
+				],
+				"concessionValue": 0.1132970587973412,
+				"utility": 0.04056969325729785,
+				"type": "accept",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 96,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Rice",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.020204102886728803,
+				"utility": 0.03289434588429555,
+				"type": "offer",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 97,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.03
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.030000000000000027,
+				"utility": 0.010715193052376065,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 97,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.9447806716622984,
+				"utility": 0.053575965261880326,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 97,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Bread",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.12
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.20999999999999996
+						}
+					}
+				],
+				"concessionValue": 0.015114219820389518,
+				"utility": 0.03536013707284101,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 98,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Fish",
+							"evaluation": 1,
+							"normalizedEvaluation": 0.06999999999999999
+						}
+					}
+				],
+				"concessionValue": 0.020000000000000018,
+				"utility": 0.013612671124661694,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 98,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.596923620141204,
+				"utility": 0.05235642740254498,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 98,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.01005050633883342,
+				"utility": 0.03874375627788328,
+				"type": "accept",
+				"agentName": "exponentialAgent"
+			}
+		],
+		[
+			{
+				"id": 99,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 2,
+							"normalizedEvaluation": 0.06
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Chicken",
+							"evaluation": 8,
+							"normalizedEvaluation": 0.5599999999999999
+						}
+					}
+				],
+				"concessionValue": 0.010000000000000009,
+				"utility": 0.06344416552140675,
+				"type": "offer",
+				"agentName": "linearAgent"
+			},
+			{
+				"id": 99,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.45
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 5,
+							"normalizedEvaluation": 0.05
+						}
+					}
+				],
+				"concessionValue": 0.831796954143659,
+				"utility": 0.05116464961403771,
+				"type": "offer",
+				"agentName": "randomAgent"
+			},
+			{
+				"id": 99,
+				"choices": [
+					{
+						"issueName": "Staple food",
+						"item": {
+							"name": "Noodles",
+							"evaluation": 3,
+							"normalizedEvaluation": 0.09
+						}
+					},
+					{
+						"issueName": "Main dish",
+						"item": {
+							"name": "Steak",
+							"evaluation": 4,
+							"normalizedEvaluation": 0.27999999999999997
+						}
+					}
+				],
+				"concessionValue": 0.005012562893380035,
+				"utility": 0.037861840714387904,
 				"type": "accept",
 				"agentName": "exponentialAgent"
 			}
